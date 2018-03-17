@@ -1,0 +1,10 @@
+.carousel-images-block {
+    height: 400px;
+    position:relative;
+}
+
+.carousel > .carousel-inner > item > img{
+    width: 100%;
+    height:400px;
+}
+

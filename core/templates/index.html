@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!--<link rel="shortcut icon" href="img/favicon/logo.ico" type="image/x-icon">-->
+
+	<link rel="shortcut icon" href= "{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+    <title>Алисард- Строительство и проектирование КДК</title>
+
+
+
+    <link href="{% static 'plugins/bootstrap-3.3.7/css/animate.min.css' %}" rel="stylesheet">
+	<link href="{% static 'plugins/bootstrap-3.3.7/bootstrap.min.css' %}" rel="stylesheet">
+
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+	<link href="{% static 'fonts/OpenSans/OpenSans-Regular.ttf' %}" type="text/css">
+
+	<link href="{% static 'fonts/OpenSansLight/OpenSansLight.ttf' %}" type="text/css">
+	<link href="{% static 'fonts/Exo2Bold/Exo2Bold.ttf' %}" type="text/css">
+	<link href="{% static 'fonts/OpenSansBold/OpenSansBold.ttf' %}" type="text/css">
+	<link href="{% static 'fonts/OpenSansRegular/OpenSansRegular.ttf' %}" type="text/css">
+	<link href="{% static 'fonts/OpenSansSemiBold/OpenSansSemiBold.ttf' %}" type="text/css">
+	<link href="{% static 'fonts/RobotoMonoLight/RobotoMono-Light.ttf' %}" type="text/css">
+
+	<link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+
+    {% block css %} {% endblock css %}
+</head>
+
+<body>
+	 <div class="head-main col-md-12"style="ton:0px;">
+				 <div class="col-md-2">
+				 <div class="logo-block">
+					 <img src="{% static 'images/logo.png' %}" style="width: 43%">
+				 </div>
+			 </div>
+
+			 <nav class="menu col-md-10">
+				 <ul class="clearfix">
+					 <li><a href="#">О компании <span class="arrow">&#9660;</span></a>
+						 <ul class="sub-menu">
+							 <li><a href="#">Компания Алисард</a></li>
+							 <li><a href="#">Новости </a></li>
+							 <li><a href="#">Партнеры</a></li>
+							 <li><a href="#">Контакты</a></li>
+						 </ul>
+					 </li>
+					 <li><a href="#">Проекты<span class="arrow">&#9660;</span></a>
+						 <ul class="sub-menu">
+							 <li><a href="#">Объекты промышленного назначения</a></li>
+							 <li><a href="#">Спортивные сооружения</a></li>
+							 <li><a href="#">Сельскохозяйственные объекты</a></li>
+							 <li><a href="#">Логистичекие комплексы</a></li>
+							 <li><a href="#">Купольные конструкции</a></li>
+						 </ul>
+
+					 </li>
+					 <li><a href="#">Услуги <span class="arrow">&#9660;</span></a>
+						 <ul class="sub-menu">
+							 <li><a href="#">Строительство КДК</a></li>
+							 <li><a href="#">Деревянные дома </a></li>
+							 <li><a href="#">Ремонт и реконструкции </a></li>
+							 <li><a href="#">Металлоконструкции </a></li>
+							 <li><a href="#">Ландшафтный дизайн </a></li>
+						 </ul>
+					 </li>
+					 <li><a href="#">Фотогалерея</a></li>
+					 <li><a href="#">Контакты</a></li>
+				 </ul>
+			 </nav>
+		 	 		<div class="col-xs-6 col-md-4 phone">
+						<p class="texts">+7 (981) 155 66 55</p>
+						<p class="times">Пн-Пт: с 10:00 до 19:00</p>
+						<p class="phon">Заказать обратный звонок</p>
+					</div>
+
+		 <div class="container textcenter">
+			 <h1> Монтаж большепролетных конструкций и сооружений</h1>
+		 </div>
+	 </div>
+
+	 <div class="col-md-12 info-company">
+		 <!--<div class="container">-->
+
+			  <div class="col-md-3 itempr">
+							 		<img class="bvd" src="{% static 'images/ico/12.ico' %}" style="width: 20%">
+							 <p>Гарантия качества<br> Высокое качество работы</p>
+						 </div>
+
+						<div class="col-md-3 itempr">
+							<img class="bvd" src="{% static 'images/ico/14.ico' %}" style="width: 20%">
+							 <p>10 ЛЕТ<br>Опыт работы</p>
+						</div>
+
+						<div class="col-md-3 itempr">
+							<img class="bvd" src="{% static 'images/ico/13.ico' %}" style="width: 20%">
+				 			<p>Более 50<br>Построенных объектов</p>
+						 </div>
+
+						 <div class="col-md-3 itempr">
+							 		<img class="bvd" src="{% static 'images/ico/11.ico' %}" style="width: 20%">
+							 <p>Соблюдение строков<br>Строгое соблюдение сроков</p>
+						 </div>
+			 <!--</div>-->
+	 </div>
+
+
+
+
+{% block content %} {% endblock content %}
+<footer class="mayfooter">
+	<div class="container">
+		<div class="row">
+			<div class="footermaik">
+
+					<div class="col-md-3 col-sm-6 footerinfosing">
+						<a class="title-main" href="#" >О компании</a>
+							<ul class="listfooter">
+								<li><a href="#">Алисард</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Фотогалерея</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+					</div>
+
+					<div class="col-md-3 col-sm-6 footerinfosing">
+						<a href="#" class="title-main">Проекты</a>
+							<ul class="listfooter">
+								<li><a href="#">Спортивные объекты</a></li>
+								<li><a href="#">Сельскохозяйственные объекты</a></li>
+								<li><a href="#">Логистические комплексы</a></li>
+							</ul>
+					</div>
+
+					<div class="col-md-3 col-sm-6 footerinfosing">
+						<a href="#" class="title-main" >Услуги</a></h2>
+							<ul class="listfooter">
+								<li><a href="#">Строительство КДК</a></li>
+								<li><a href="#">Изготовление домов</a></li>
+								<li><a href="#">Ремонт и реконструкции</a></li>
+								<li><a href="#">Металлоконструкции</a></li>
+								<li><a href="#">Ландшафтный дизайн</a></li>
+							</ul>
+					</div>
+			</div>
+	</div>
+</div>
+
+<section class="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<p>© 2018 ООО АЛИСАРД. Все права защищены</p>
+			</div>
+			<div class="col-md-offset-4">
+				<nav class="mei">
+							<ul>
+								<li class="active"> <a href="#">Компания</a></li>
+								<li><a href="#">Проекты</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Контакты</a></li>
+								<!--<li><a href="#">Сертификаты</a></li>-->
+							</ul>
+						</nav>
+			</div>
+
+</div>
+</div>
+</section>
+</footer>
+
+
+
+
+{% block scripts %}
+	 <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap-3.3.7/js/bootstrap.js' %}"></script>
+
+
+{% endblock scripts %}
+    <script>
+       if ($(document).height() <= $(window).height())
+  $("footer.footer").addClass("navbar-fixed-bottom");
+    </script>
+
+</body>
+</html>
