@@ -1,0 +1,419 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block css %}
+    {{ block.super }}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/screen.css' %}" rel="stylesheet">
+{% endblock css %}
+{% block content %}
+    <div class="col-md-12 info-company">
+        <!--<div class="container">-->
+        <div class="col-md-3 itempr">
+            <img class="bvd" src="{% static 'images/ico/12.ico' %}" style="width: 20%">
+            <p>Гарантия качества<br> Высокое качество работы</p>
+        </div>
+	        <div class="col-md-3 itempr">
+                <img class="bvd" src="{% static 'images/ico/14.ico' %}" style="width: 20%">
+                <p>10 ЛЕТ<br>Опыт работы</p>
+            </div>
+	        <div class="col-md-3 itempr">
+                <img class="bvd" src="{% static 'images/ico/13.ico' %}" style="width: 20%">
+                <p>Более 50<br>Построенных объектов</p>
+            </div>
+	        <div class="col-md-3 itempr">
+                <img class="bvd" src="{% static 'images/ico/11.ico' %}" style="width: 20%">
+                <p>Соблюдение строков<br>Строгое соблюдение сроков</p>
+            </div>
+        <!--</div>-->
+    </div><!-- info-company -->
+
+<!--------------------Блок о компании-------------->
+
+    <div class="container">
+        <div class="col-xs-12 company" style="text-align: center">
+            <h1 class="usl">Уcлуги:</h1>
+            <p style="text-align: center">Выбирайте лучшее для строительсва будущего</p>
+            <div class="centerblock1">
+                <div class="col-md-4 ub-ur">
+                    <figure class="snip0029">
+                        <img src="{% static 'images/s1.jpg' %}" >
+                        <figcaption>
+                            <div>
+                                <a href="#" class="tetusl">Подробнее</a>
+                                <a href="#"><i class="ion-person-add"></i></a>
+                                <a href="#"><i class="ion-map"></i></a>
+                            </div>
+                            <h2><span>ПРОЕКТИРОВАНИЕ</span></h2>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-4 ub-ur">
+                    <figure class="snip0029">
+                        <img src="{% static 'images/s2.jpg' %}" >
+                        <figcaption>
+                            <div>
+                                <a href="#" class="tetusl">Подробнее</a>
+                                <a href="#"><i class="ion-person-add"></i></a>
+                                <a href="#"><i class="ion-map"></i></a>
+                            </div>
+                            <h2><span>СТРОИТЕЛЬСТВО</span></h2>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-4 ub-ur">
+                    <figure class="snip0029">
+                        <img src="{% static 'images/s3.jpg' %}" >
+                        <figcaption>
+                            <div>
+                                <a href="#" class="tetusl">Подробнее</a>
+                                <a href="#"><i class="ion-person-add"></i></a>
+                                <a href="#"><i class="ion-map"></i></a>
+                            </div>
+                            <h2><span>РЕКОНСТРУКЦИЯ</span></h2>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div><!--container-->
+
+<!--------------------Блок о компании-------------->
+    <div class="gallarybac">
+        <div class="container">
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="gallery-title usl">Портфолио</h1>
+                    <p class="projp">Большепролетные клееные деревянные конструкции</p>
+                </div>
+
+                <div align="center">
+                    <button class="filter-button bntcd" data-filter="all">Все проекты</button>
+                    <button class="filter-button bntcd" data-filter="hdpe">Спортивные сооружения</button>
+                    <button class="filter-button bntcd" data-filter="sprinkle">Коммерческие проекты</button>
+                    <button class="filter-button bntcd" data-filter="spray">Ледовые арены</button>
+                    <button class="filter-button bntcd" data-filter="irrigation">Прочие</button>
+                </div>
+                <br/>
+                <figure>
+                    <ul class=" grid cs-style-4 gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <li>
+					        <figure>
+						        <div><img src="{% static 'images/gallary/1.png' %}"class="img-responsive"></div>
+						        <figcaption>
+							        <h3>Газпром Детям</h3>
+                                    <span>Строительствово</span>
+                                    <a href="http://dribbble.com/shots/1116775-Safari">Подробнее</a>
+						        </figcaption>
+					        </figure>
+                        </li>
+                    </ul>
+
+                    <ul class=" grid cs-style-4 gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <li>
+					        <figure>
+						        <div><img src="{% static 'images/gallary/2.png' %}"class="img-responsive" ></div>
+						        <figcaption>
+							        <h3>Safari</h3>
+                                    <span>Jacob Cummings</span>
+                                    <a href="http://dribbble.com/shots/1116775-Safari">Подробнее</a>
+						        </figcaption>
+					        </figure>
+                        </li>
+                    </ul>
+
+                    <ul class=" grid cs-style-4 gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <li>
+					        <figure>
+						        <div><img src="{% static 'images/gallary/3.png' %}"class="img-responsive"></div>
+						        <figcaption>
+							        <h3>Safari</h3>
+                                    <span>Jacob Cummings</span>
+                                    <a href="http://dribbble.com/shots/1116775-Safari">Подробнее</a>
+						        </figcaption>
+					        </figure>
+                        </li>
+                    </ul>
+
+                    <ul class=" grid cs-style-4 gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <li>
+					        <figure>
+						        <div><img src="{% static 'images/gallary/3.png/' %}"class="img-responsive"></div>
+						            <figcaption>
+							            <h3>Safari</h3>
+							            <span>Jacob Cummings</span>
+                                        <a href="http://dribbble.com/shots/1116775-Safari">Подробнее</a>
+						            </figcaption>
+					        </figure>
+                        </li>
+                    </ul>
+
+                    <ul class=" grid cs-style-4 gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <li>
+					        <figure>
+						        <div><img src="{% static 'images/gallary/2.png' %}"class="img-responsive"></div>
+						        <figcaption>
+							        <h3>Safari</h3>
+							        <span>Jacob Cummings</span>
+                                    <a href="http://dribbble.com/shots/1116775-Safari">Подробнее</a>
+						        </figcaption>
+					        </figure>
+                        </li>
+                    </ul>
+
+      <ul class=" grid cs-style-4 gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <li>
+					<figure>
+						<div><img src="{% static 'images/gallary/1.png' %}"class="img-responsive"></div>
+						    <figcaption>
+							    <h3>Safari</h3>
+							        <span>Jacob Cummings</span>
+							            <a href="http://dribbble.com/shots/1116775-Safari">Подробнее</a>
+						</figcaption>
+					</figure>
+                </li>
+            </ul>
+    </figure>
+
+
+</div>
+             </div>
+         </div>
+
+<!--------------Блок быстрые новости------------------------->
+<div class="new">
+    <div class="container">
+
+<div class="col-md-12" data-wow-delay="0.2s">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="1">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="2">
+                                </li>
+                            </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner text-center">
+
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2 newrow">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2 newrow">
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                                <small>Someone famous</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2 newrow">
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                                <small>Someone famous</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+
+
+</div>
+</div>
+
+
+
+<!--------------Блок быстрые новости------------------------->
+
+<!--------партнеры---------------------------------------->
+
+<div class="container paryners">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header" style="text-align: center">
+                 <h1 class="usl">Наши партнеры</h1>
+                    <!--<p style="text-align: center">Пупсики Алисард полрп вцукенгшщзждлопав</p>-->
+            </div>
+
+  <div id="myCarousel" class="row carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+
+        <ul class="thumbnails">
+          <li class="col-sm-3">
+            <div class="thumbnail">
+             <img src="{% static 'images/partners/p1.jpg' %}" alt="...">
+            </div>
+          </li>
+
+          <li class="col-sm-3">
+            <div class="thumbnail">
+             <img src="{% static 'images/partners/p2.jpg' %}" alt="...">
+            </div>
+          </li>
+
+          <li class="col-sm-3">
+            <div class="thumbnail">
+              <img src="{% static 'images/partners/p3.jpg' %}" alt="...">
+            </div>
+          </li>
+
+          <li class="col-sm-3">
+            <div class="thumbnail">
+             <img src="{% static 'images/partners/p4.jpg' %}" alt="...">
+            </div>
+          </li>
+
+        </ul>
+      </div><!-- /Slide1 -->
+
+
+      <div class="item">
+        <ul class="thumbnails">
+          <li class="col-sm-3">
+            <div class="thumbnail">
+              <img src="{% static 'images/partners/p5.jpg' %}" alt="...">
+            </div>
+          </li>
+
+          <li class="col-sm-3">
+            <div class="thumbnail">
+              <img src="{% static 'images/partners/p1.jpg' %}" alt="...">
+            </div>
+            </li>
+
+          <li class="col-sm-3">
+            <div class="thumbnail">
+             <img src="{% static 'images/partners/p2.jpg' %}" alt="...">
+            </div>
+          </li>
+
+          <li class="col-sm-3">
+            <div class="thumbnail">
+             <img src="{% static 'images/partners/p3.jpg' %}" alt="...">
+            </div>
+          </li>
+        </ul>
+      </div><!-- /Slide2 -->
+
+
+
+
+    </div><!-- /Wrapper for slides .carousel-inner -->
+
+
+
+    <!--&lt;!&ndash; Control box &ndash;&gt;-->
+    <!--<div class="control-box">-->
+      <!--<a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>-->
+      <!--<a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>-->
+    <!--</div>&lt;!&ndash; /.control-box &ndash;&gt;-->
+
+
+  </div><!-- /#myCarousel -->
+
+
+</div><!-- /.col-sm-12 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+
+
+<!-- Delete This -->
+
+
+<!--------------------Галерея выполненных работ-------------->
+
+
+{% endblock content %}
+{% block scripts %}
+    {{ block.super }}
+
+<script src="{% static 'js/modernizr.custom.js' %}" type="text/javascript"></script>
+ <script src="{% static 'js/toucheffects.js' %}" type="text/javascript"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+    $("figure").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
+   new WOW().init();
+        $(document).ready(function() {
+            $('.carousel').carousel();
+
+           $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+//          $(document).ready(function(ev){
+//    $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+//      $('#custom_carousel .controls li.active').removeClass('active');
+//      $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+//    })
+//});
+
+
+
+           });
+
+
+    </script>
+{% endblock scripts %}
