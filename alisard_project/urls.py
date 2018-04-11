@@ -13,12 +13,29 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from admins import urls as admins_urls
 from django.conf.urls import url, include
 from django.contrib import admin
-from core.views import main_page
+from core import urls as core_urls
+from django.conf.urls.static import static
+from django.views.i18n import JavaScriptCatalog
+from django.views.static import serve
+from django.conf import settings
+import notifications.urls
+import os
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', main_page, name="main_page"),
-    url(r'^test_index/', include('core.urls')),
+    url(r'^base_admin/', admin.site.urls),
+    url(r'^admin/', include(admins_urls)),
+    url(r'^', include(core_urls)),
+    url('^inbox/notifications/', include(notifications.urls, namespace='notifications')),
+    url(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog'),
 ]
+
+#
+urlpatterns += [ url(r'^media/(?P<path>.*)$', serve, { 'document_root': settings.MEDIA_ROOT, }), url(r'^static/(?P<path>.*)$', serve, { 'document_root': settings.STATIC_ROOT }), ]
+if settings.DEBUG:
+    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+    urlpatterns += staticfiles_urlpatterns()
+    urlpatterns += static(settings.MEDIA_URL, document_root=os.path.join(settings.MEDIA_ROOT, ''))

@@ -15,8 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from core.views import test_index
+from core.views import contacts
+from core.views import news
+from core.views import news_about
+from core.views import about
+from core.views import main_page
 
 urlpatterns = [
-
-    url(r'^$', test_index, name="test_index")
+    url("^contacts/$", contacts, name="contacts"),
+    url("^news_about/$", news_about, name="news_about"),
+    url("^about/$", about, name="about"),
+    url(r'^$', main_page, name="main_page"),
+    url("^news/$", news, name="news"),
 ]

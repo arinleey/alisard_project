@@ -69,29 +69,6 @@ a.zakaz:active {
 .callback{
     color: #6b6767;
  }
-.textcenter{
-    margin-top: 257px;
-    margin-bottom: 177px;
- }
-.textcenter h1{
-    color:#fff;
-    text-align: center;
-    font-family: OpenSansSemiBold, sans-serif;
-    font-size: 70px;
-    font-weight: 900;
-    line-height: .92;
-    letter-spacing: -3px;
-    text-shadow: 1px 1px 2px black, 0 0 2em black;
-   }
-/*.formgr{*/
-    /*width: 20%;*/
-    /*height: 48px;*/
-    /*padding: 6px 20px;*/
-    /*font-size: 15px;*/
-    /*font-weight: 300;*/
-    /*!*border: 1px solid #ddd;*!*/
-/*}*/
-/******************/
 .main{
   width: 100%;
 }
@@ -164,6 +141,7 @@ a.zakaz:active {
 .head-main{
     background-image: url("../images/1234.png");
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .phone-number{
     margin-top: 15px;
@@ -565,8 +543,7 @@ figure.snip0029.hover a:nth-child(3) i {
 }
 .info-company{
     background-color: #051421;
-    /*background-image: url('../images/tek.jpg');*/
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 .itempr{
     color:#fff;
@@ -584,6 +561,19 @@ figure.snip0029.hover a:nth-child(3) i {
     float: left;
     padding-right: 5px;
 }
-
+.textcenter{
+    margin-top: 140px;
+    margin-bottom: 177px;
+ }
+.textcenter h1{
+    color:#fff;
+    text-align: center;
+    font-family: OpenSansSemiBold, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: .92;
+    letter-spacing: -3px;
+    text-shadow: 1px 1px 2px black, 0 0 2em black;
+}
 
 

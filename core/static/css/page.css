@@ -1,0 +1,407 @@
+.menu a {
+    transition:all linear 0.15s;
+    color: #333;
+    font-size: 16px;
+}
+.menu a:hover {
+    color: #fff;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#fff;
+    background-color: #448e3b;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+.menu > ul > li {
+    /*float:left;*/
+    display:inline-block;
+    position:relative;
+    font-size:15px;
+}
+/*----- выпадающее меню -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:3;
+    background-color: #fff;
+}
+.sub-menu {
+    color: #fff;
+}
+.head-main{
+    background-image: none;
+}
+.phone{
+    color: #333;
+}
+.texts{
+    color: #333;
+}
+.texts:hover {
+    color: #333;
+}
+.times{
+    text-decoration:none;
+}
+.phon{
+    color:#333;
+}
+.phon:hover{
+    color:#333;
+}
+.times{
+    color: #333;
+}
+.bread{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+.bread li a{
+    color: #182737;
+    font-family: OpenSansSemiBold, sans-serif;
+    line-height: .92;
+    letter-spacing: 2px;
+}
+.breadcrumb{
+    background-color: transparent;
+    padding-left: 20px;
+}
+.sctstrong li{
+    color: #333;
+}
+.sctstrong h1{
+    text-align: center;
+}
+.textcompany{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.textcompany p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.imgcompany{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.main-wrapper{
+    padding-bottom:600px; /* отступ снизу главного блока, на высоту футера */
+    min-height: 100%;
+}
+.aboutdignity {
+    margin-top: 75px;
+    padding-bottom: 25px;
+}
+.captiondignity{
+    font-family: OpenSansSemiBold, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: .62;
+    letter-spacing: -1px;
+    margin: 0;
+    padding-bottom: 7px;
+
+}
+.captionh{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.buttongallary a{
+    color: #8d8d8d;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+.buttongallary a:hover{
+    color: #333;
+}
+
+.imgmain{
+    background-image: url('../images/wsSPM_croper_ru.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+.imgmain h3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#fff;
+    text-align: center;
+    font-family: OpenSansSemiBold, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: .92;
+    letter-spacing: -3px;
+    text-shadow: 1px 1px 2px black, 0 0 2em black;
+}
+.aboutcompany{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.aboutcompany p{
+    color: #696969;
+    font-size: 14px;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+.gallery-title{
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+/*.aboutpartner{*/
+    /*!*margin-top: 70px;*!*/
+    /*margin-bottom: 30px;*/
+/*}*/
+/*-----------------------------------------*/
+.phon{
+font-weight: 600;
+}
+
+button {
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+button {
+  background: #3e8f3e;
+  color: #ccc;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  font-size: 15px;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  -webkit-transition: .6s;
+  transition: .6s;
+  overflow: hidden;
+}
+button:focus {
+  outline: 0;
+}
+button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}
+button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}
+button:hover {
+  background: #338033;
+  cursor: pointer;
+}
+button:hover:before {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+button:hover:after {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+#myCarousel .list-group .active {
+	background-color:#eee;
+}
+
+/*@media (min-width: 992px) {*/
+	/*#myCarousel {padding-right:33.3333%;}*/
+	/*#myCarousel .carousel-controls {display:none;}*/
+/*}*/
+@media (max-width: 991px) {
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;}
+}
+.news_gallery{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.news-section{
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+.button_news{
+    text-align: center;
+    margin: 0;
+}
+button {
+     width: auto;
+     height: auto;
+
+}
+.item active{
+    width: 760px;
+    height: 400px;
+}
+.carouseltxt a{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+
+}
+.carouseltxt a:hover{
+    font-weight: 700;
+}
+.imgcarouselnews img{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.imgcarouselnews img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+ }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 9;
+    color: #fff;
+    background-color: #182737;
+    border-color: #182737;
+}
+#myCarousel .list-group .active {
+    opacity: 30%;
+    background-color: #182737;
+}
+.news_txt{
+    font-size: 18px;
+    text-align: center;
+}
+.news-column{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.news-column img{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.news-column img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.carousel-caption a{
+    color: #fff;
+    text-decoration: none;
+}
+.galletytxt a{
+    margin-bottom: 200px;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-weight: 500;
+}
+.paginationposition{
+   padding-top: 50px;
+   padding-bottom: 70px;
+   eight: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination li a {
+    color: #182737;
+}
+.pagination > .active > a{
+    background-color: #182737;
+    border-color: #182737;
+}
+.pagination > .active > a:hover{
+    background-color: #182737;
+    border-color: #182737;
+}
+.centertxt{
+    margin-left: 50px;
+}
+.gallnews{
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+#contact{
+    background-color:#f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact .well{
+    margin-top:30px;
+    border-radius:0;
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #1e1e1e;
+}
+
+#contact button{
+    border-radius:0;
+    border:2px solid #1e1e1e;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) {
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+
+}
+.fansy_title{
+    font-family: OpenSansSemiBold, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: .92;
+    letter-spacing: -3px;
+    margin: 0
+}
+
