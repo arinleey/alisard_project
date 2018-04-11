@@ -5,53 +5,10 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/screen.css' %}" rel="stylesheet">
     <link href="{% static 'css/page.css' %}" rel="stylesheet">
+    <link href="{% static 'css/news.css' %}" rel="stylesheet">
 
 {% endblock css %}
 {% block content %}
-    <div class="head-main row" style="top:0px;">
-        <div class="col-md-2">
-            <div class="logo-block">
-                <a href="main_page.html"><img src="{% static 'images/logo.png' %}" style="width: 43%"></a>
-            </div>
-        </div>
-        <nav class="menu col-md-6">
-            <ul class="clearfix">
-                <li><a href="#" class="mainmenuu">О компании <span class="arrow">&#9660;</span></a>
-                    <ul class="sub-menu">
-                        <li><a href="about">О нас</a></li>
-                        <li><a href="news">Новости </a></li>
-                        <li><a href="#">Партнеры</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Проекты <span class="arrow">&#9660;</span></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Объекты промышленного назначения</a></li>
-                        <li><a href="#">Спортивные сооружения</a></li>
-                        <li><a href="#">Сельскохозяйственные объекты</a></li>
-                        <li><a href="#">Логистичекие комплексы</a></li>
-                        <li><a href="#">Купольные конструкции</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Услуги <span class="arrow">&#9660;</span></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Строительство КДК</a></li>
-                        <li><a href="#">Деревянные дома </a></li>
-                        <li><a href="#">Ремонт и реконструкции </a></li>
-                        <li><a href="#">Металлоконструкции </a></li>
-                        <li><a href="#">Ландшафтный дизайн </a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Фотогалерея</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="col-xs-6 col-md-4 phone">
-            <p class="texts">+7 (981) 155 66 55</p>
-            <p class="times">Пн-Пт: с 10:00 до 19:00</p>
-            <p class="phon">Заказать обратный звонок</p>
-        </div>
-    </div>
     <div class="imgmain">
         <div class="jhtghj">
             <h3> Самые актуальные новости строительства</h3>
@@ -59,7 +16,7 @@
     </div>
     <div class="bread">
         <ol class="breadcrumb">
-            <li><a href="main_page.html">Главная</a></li>
+            <li><a href="{% url 'main_page' %}">Главная</a></li>
             <li class="active" style="color: #333;"><strong>Новости</strong></li>
         </ol>
     </div>
@@ -67,40 +24,40 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="imgcarouselnews">
-                        <img src="{% static 'images/DSC_0882.JPG' %}"  style="width: 850px; height: 400px">
+                    <div class="img-carousel-news">
+                        <img src="{% static 'images/DSC_0882.JPG' %}">
                     </div>
                     <div class="carousel-caption">
                         <h4 class="carouseltxt"><a href="#">Опыт применения клееных деревянных конструкций в зданиях и  сооружениях с химически агрессивной средой</a></h4>
                     </div>
                 </div><!-- End Item -->
                 <div class="item">
-                    <div class="imgcarouselnews">
-                        <img src="{% static 'images/DSC_0882.JPG' %}"  style="width: 850px; height: 400px">
+                    <div class="img-carousel-news">
+                        <img src="{% static 'images/DSC_0882.JPG' %}">
                     </div>
                     <div class="carousel-caption">
                         <h4 class="carouseltxt"><a href="#">Опыт применения клееных деревянных конструкций в зданиях и  сооружениях с химически агрессивной средой</a></h4>
                     </div>
                 </div><!-- End Item -->
                 <div class="item">
-                    <div class="imgcarouselnews">
-                        <img src="{% static 'images/DSC_0882.JPG' %}"  style="width: 850px; height: 400px">
+                    <div class="img-carousel-news">
+                        <img src="{% static 'images/DSC_0882.JPG' %}">
                     </div>
                     <div class="carousel-caption">
                         <h4 class="carouseltxt"><a href="#">Опыт применения клееных деревянных конструкций в зданиях и  сооружениях с химически агрессивной средой</a></h4>
                     </div>
                 </div><!-- End Item -->
                 <div class="item">
-                    <div class="imgcarouselnews">
-                        <img src="{% static 'images/DSC_0882.JPG' %}"  style="width: 850px; height: 400px">
+                    <div class="img-carousel-news">
+                        <img src="{% static 'images/DSC_0882.JPG' %}">
                     </div>
                     <div class="carousel-caption">
                         <h4 class="carouseltxt"><a href="#">Опыт применения клееных деревянных конструкций в зданиях и  сооружениях с химически агрессивной средой</a></h4>
                     </div>
                 </div><!-- End Item -->
                 <div class="item">
-                    <div class="imgcarouselnews">
-                        <img src="{% static 'images/DSC_0882.JPG' %}"  style="width: 850px; height: 400px">
+                    <div class="img-carousel-news">
+                        <img src="{% static 'images/DSC_0882.JPG' %}">
                     </div>
                     <div class="carousel-caption">
                         <h4 class="carouseltxt"><a href="#">Опыт применения клееных деревянных конструкций в зданиях и  сооружениях с химически агрессивной средой</a></h4>
@@ -114,14 +71,6 @@
                 <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><h4>magna aliquyam erat, sed diam voluptua</h4></li>
                 <li data-target="#myCarousel" data-slide-to="4" class="list-group-item"><h4>tempor invidunt ut labore et dolore magna aliquyam erat</h4></li>
             </ul>
-            <div class="carousel-controls">
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-            </div>
         </div><!-- End Carousel -->
     </div>
     <div class="news-section">

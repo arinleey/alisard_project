@@ -1,0 +1,28 @@
+.item{
+    position: relative;
+}
+.carousel-inner{
+    width: 70%;
+}
+.list-group{
+    position: relative;
+    width: 30%;
+}
+.img-carousel-news{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.img-carousel-news img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.img-carousel-news img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+ }
