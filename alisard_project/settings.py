@@ -85,9 +85,9 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.cache.FetchFromCacheMiddleware',
     # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'ratelimit.middleware.RatelimitMiddleware',
 ]
@@ -112,7 +112,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'alisard_project.wsgi.application'
+WSGI_APPLICATION = 'alisard_project.wsgi.application'
 
 
 # Database

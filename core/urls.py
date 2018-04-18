@@ -14,17 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from core.views import test_index
 from core.views import contacts
 from core.views import news
 from core.views import news_about
 from core.views import about
 from core.views import main_page
+from core.views import project
+
 
 urlpatterns = [
-    url("^contacts/$", contacts, name="contacts"),
-    url("^news_about/$", news_about, name="news_about"),
-    url("^about/$", about, name="about"),
+    url(r'^contacts/$', contacts, name="contacts"),
+    url(r'^news_about/$', news_about, name="news_about"),
+    url(r'^about/$', about, name="about"),
     url(r'^$', main_page, name="main_page"),
-    url("^news/$", news, name="news"),
+    url(r'^news/$', news, name="news"),
+    url(r'^project/$', project, name="project"),
 ]

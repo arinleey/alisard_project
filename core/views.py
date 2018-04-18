@@ -25,3 +25,7 @@ def news_about(request):
 
 def contacts(request):
     return render(request, 'contacts.html')
+
+
+def project(request):
+    return render(request, 'project.html')

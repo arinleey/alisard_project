@@ -78,7 +78,7 @@ a.zakaz:active {
   margin:22px;
   float: left;
 }
-.button-one, .button-two, .button-three{
+.button-one,.button-three{
   text-align: center;
   cursor: pointer;
   font-size:24px;
@@ -103,12 +103,18 @@ a.zakaz:active {
 }
 /*Button Two*/
 .button-two {
-  border-radius: 4px;
-  background-color:#d35400;
-  border: none;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 16px -105px 0 100px;
+}
+.button-two {
+    border-radius: 4px;
+    background-color: #448f3b;
+    border: none;
+    padding: 4px;
+    /* width: 200px; */
+    transition: all 0.5s;
 }
 .button-two span {
   cursor: pointer;
@@ -132,7 +138,6 @@ a.zakaz:active {
   right: 0;
 }
 .logo-block{
-    text-align: center;
     padding-top: 25px;
 }
 .logo-block img {
@@ -141,7 +146,14 @@ a.zakaz:active {
 .head-main{
     background-image: url("../images/1234.png");
     background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    /*-moz-background-size: 100%;*/
+    /*-webkit-background-size: 100%;*/
+    /*-o-background-size: 100%;*/
+
 }
 .phone-number{
     margin-top: 15px;

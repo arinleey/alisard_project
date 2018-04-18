@@ -1,0 +1,40 @@
+@media screen and (min-width : 1824px) {
+    .menu-wrap ul li a{
+	    font-size:23px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .logo-block img {
+        width: 170%;
+    }
+
+    .texts{
+        font-size: 26px;
+    }
+    .times{
+        font-size: 23px;
+    }
+    .phon{
+      font-size: 23px;
+    }
+}
+@media screen and (max-width: 1203px) {
+    .menu {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 1004px) {
+    .menu {
+        width: 121%;
+    }
+}
+
+@media screen and (max-width: 995px) {
+
+        .menu {
+        margin-top: 0;
+    }
+
+}

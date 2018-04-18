@@ -9,17 +9,19 @@
 
 {% endblock css %}
 {% block content %}
-    <div class="imgmain">
+    <div class="img-main">
         <div class="jhtghj">
             <h3> Самые актуальные новости строительства</h3>
         </div>
     </div>
+
     <div class="bread">
         <ol class="breadcrumb">
             <li><a href="{% url 'main_page' %}">Главная</a></li>
             <li class="active" style="color: #333;"><strong>Новости</strong></li>
         </ol>
     </div>
+
     <div class="news_gallery col-md-12">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -64,51 +66,131 @@
                     </div>
                 </div><!-- End Item -->
             </div><!-- End Carousel Inner -->
-            <ul class="list-group col-sm-4">
-                <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active"><h4>Применение деревянных конструкций рядом с химически агрессивной средой</h4></li>
-                <li data-target="#myCarousel" data-slide-to="1" class="list-group-item"><h4>consetetur sadipscing elitr, sed diam nonumy eirmod</h4></li>
-                <li data-target="#myCarousel" data-slide-to="2" class="list-group-item"><h4>tempor invidunt ut labore et dolore</h4></li>
-                <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><h4>magna aliquyam erat, sed diam voluptua</h4></li>
-                <li data-target="#myCarousel" data-slide-to="4" class="list-group-item"><h4>tempor invidunt ut labore et dolore magna aliquyam erat</h4></li>
+            <ul class="list-group col-sm-4 heading-carousel">
+                <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">
+                    <p>Применение деревянных конструкций рядом с химически агрессивной средой</p>
+                </li>
+                <li data-target="#myCarousel" data-slide-to="1" class="list-group-item"><p>Применение деревянных конструкций рядом с химически агрессивной средой</p></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="list-group-item"><p>Применение деревянных конструкций рядом с химически агрессивной средой</p></li>
+                <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><p>Применение деревянных конструкций рядом с химически агрессивной средой</p></li>
+                <li data-target="#myCarousel" data-slide-to="4" class="list-group-item"><p>Применение деревянных конструкций рядом с химически агрессивной средой</p></li>
             </ul>
         </div><!-- End Carousel -->
     </div>
-    <div class="news-section">
-        <div class="container col-md-12">
-            <div class="col-md-3 news-column galletytxt" >
-                <a href="news_about"><img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name"></a>
-                <h4><a class="news-btn" href="news_about">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
-        	</div>
-            <div class="col-md-3 news-column galletytxt" >
-        		<img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name">
-                     <h4><a class="news-btn" href="#">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
-        	</div>
-            <div class="col-md-3 news-column galletytxt" >
-                <img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name">
-                <h4><a class="news-btn" href="#">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
+
+    <div class="container" style="text-align: center">
+            <div class="col-md-12 col-md-offset-0">
+                <nav class="filter-menu-news">
+                    <ul>
+                        <li><a href="#">Все новости</a></li>
+                        <li><a href="#">Новости компании</a></li>
+                        <li><a href="#">В процессе строительства</a></li>
+                        <li><a href="#">Законченные объекты</a></li>
+                        <li><a href="#">Выставки, семинары</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-md-3 news-column galletytxt" >
-                <img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name">
-                <h4><a class="news-btn" href="#">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
-            </div>
-            <div class="col-md-3 news-column galletytxt" >
-                <img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name">
-                <h4><a class="news-btn" href="#">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
-            </div>
-            <div class="col-md-3 news-column galletytxt" >
-                <img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name">
-                <h4><a class="news-btn" href="#">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
-            </div>
-            <div class="col-md-3 news-column galletytxt" >
-                <img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name">
-                <h4><a class="news-btn" href="#">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
-            </div>
-            <div class="col-md-3 news-column galletytxt" >
-                <img class="img-responsive" src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?w=940&h=650&auto=compress&cs=tinysrgb" title="name">
-                <h4><a class="news-btn" href="#">ФОК ГАЗПРОМ ДЕТЯМ</a></h4>
-            </div>
-        </div>
     </div>
+
+
+    <div class="col-md-12 container">
+    <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}"><br>
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+        <figure class="block-fill">
+         <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+        <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+        <figure class="block-fill">
+         <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+</div>
     <div class="container col-md-12  paginationposition">
         <ul class="pagination">
             <li class="disabled"><a href="#">Назад</a></li>

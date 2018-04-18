@@ -99,3 +99,32 @@ input[type="checkbox"]:checked ~ .grid {
  max-height: 100%;
  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
+
+.news-headline{
+    display: inline-block;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    /* font-family: Lato, sans-serif; */
+    color: #333;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 25px;
+    text-align: center;
+    font-weight: 600;
+    line-height: .92;
+    letter-spacing: -1px;
+}
+.last-news p{
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    color: #4a4747;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 700;
+    line-height: .102;
+    letter-spacing: -1px;
+}
+.last-news-img img{
+ min-height: 200px;
+ max-height: 150px;
+}
+

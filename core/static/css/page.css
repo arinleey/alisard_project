@@ -90,7 +90,7 @@
     margin-top: 15px;
 }
 .main-wrapper{
-    padding-bottom:600px; /* отступ снизу главного блока, на высоту футера */
+    padding-bottom:600px; /* отступ снизу главного блока, на высоту футера */ /*О компании*/
     min-height: 100%;
 }
 .aboutdignity {
@@ -121,12 +121,16 @@
     color: #333;
 }
 
-.imgmain{
+.img-main{
     background-image: url('../images/wsSPM_croper_ru.jpeg');
     background-repeat: no-repeat;
     background-size: contain;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
  }
-.imgmain h3{
+.img-main h3{
     padding-top: 50px;
     padding-bottom: 50px;
     color:#fff;
@@ -167,7 +171,7 @@ button {
 }
 button {
   background: #3e8f3e;
-  color: #ccc;
+  color: #fff;
   width: 150px;
   height: 50px;
   border: 0;
@@ -261,7 +265,7 @@ button:hover:after {
 	#myCarousel .list-group {display:none;}
 }
 .news_gallery{
-    margin-top: 70px;
+    /*margin-top: 70px;*/
     margin-bottom: 70px;
 }
 .news-section{
@@ -282,14 +286,16 @@ button {
     height: 400px;
 }
 .carouseltxt a{
-    color: #fff;
-    font-size: 18px;
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    color: #333;
+    font-size: 16px;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    margin: 0 0 10px;
 
 }
 .carouseltxt a:hover{
-    font-weight: 700;
+    text-decoration: underline;
 }
+
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     z-index: 9;
     color: #fff;
@@ -394,4 +400,139 @@ button {
     letter-spacing: -3px;
     margin: 0
 }
+.button-center{
+    text-align: center;
+    width: 100%;
+}
 
+.block-fill {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    margin: 10px 1%;
+    min-width: 290px;
+    max-width: 290px;
+    width: 290px;
+    height: 240px;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+}
+.block-fill * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.block-fill img {
+    position: relative;
+    max-width: 100%;
+    vertical-align: top;
+}
+.block-fill figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    padding: 20px 30px;
+}
+.block-fill figcaption:before,
+.block-fill figcaption:after {
+    width: 1px;
+    height: 0;
+}
+.block-fill figcaption:before {
+    right: 0;
+    top: 0;
+}
+.block-fill figcaption:after {
+    left: 0;
+    bottom: 0;
+}
+.block-fill h3,
+.block-fill p {
+    line-height: 1.5em;
+    color: #333;
+    
+}
+.block-fill h3 {
+    margin: 0 0 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.block-fill p {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+.block-fill a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.block-fill:before,
+.block-fill:after,
+.block-fill figcaption:before,
+.block-fill figcaption:after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0.8;
+}
+.block-fill:before,
+.block-fill:after {
+    height: 1px;
+    width: 0%;
+}
+.block-fill:before {
+    top: 0;
+    left: 0;
+}
+.block-fill:after {
+    bottom: 0;
+    right: 0;
+}
+.block-fill:hover img,
+.block-fill.hover img {
+    opacity: 0.4;
+}
+.block-fill:hover figcaption,
+.block-fill.hover figcaption {
+    opacity: 1;
+    color: #4a4747;
+}
+.block-fill:hover figcaption:before,
+.block-fill.hover figcaption:before,
+.block-fill:hover figcaption:after,
+.block-fill.hover figcaption:after {
+    height: 100%;
+}
+.block-fill:hover:before,
+.block-fill.hover:before,
+.block-fill:hover:after,
+.block-fill.hover:after {
+    width: 100%;
+}
+.block-fill:hover:before,
+.block-fill.hover:before,
+.block-fill:hover:after,
+.block-fill.hover:after,
+.block-fill:hover figcaption:before,
+.block-fill.hover figcaption:before,
+.block-fill:hover figcaption:after,
+.block-fill.hover figcaption:after {
+  opacity: 0.1;
+}
