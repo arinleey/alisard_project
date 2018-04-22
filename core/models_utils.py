@@ -4,6 +4,9 @@ from django.core.files.temp import NamedTemporaryFile
 import requests
 
 
+def pages_path(instance, filename):
+    return 'pages/%s/%s' % (instance.name, filename)
+
 def projects_path(instance, filename):
     return 'projects/%s/%s' % (instance.name, filename)
 

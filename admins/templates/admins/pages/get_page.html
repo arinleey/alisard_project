@@ -1,0 +1,22 @@
+{% extends 'admin_base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block css %}
+    {{ block.super }}
+{% endblock css %}
+
+{% block main_content %}
+    {% if data is None %}
+        {% trans 'Увы, у вас нету данных о главной странице, хотите создать?' %}
+        <a href="{% url 'create_page' 0 %}">Create_page</a>
+    {% else %}
+        {% for page in data %}
+            <h1>{{ page.name }}</h1> <a href="{% url 'customize_page' 0  page.id  %}">Create_page</a>
+        {% endfor %}
+    {% endif %}
+{% endblock main_content %}
+
+{% block scripts %}
+    {{ block.super }}
+{% endblock scripts %}

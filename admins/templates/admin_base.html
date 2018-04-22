@@ -1,8 +1,8 @@
 {% load static %}
-{#{% load admins_tags %}#}
+{% load admins_tags %}
 {% load notifications_tags %}
 <!DOCTYPE html>
-<!-- 
+<!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
 Version: 4.6
 Author: KeenThemes
@@ -98,12 +98,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </li>
                                     <li>
                                         <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
-                                            <li><a href="javascript:;">
+                                            <li>
+                                                <a href="javascript:;">
                                                     <span class="time"></span>
                                                     <span class="details">
                                                         <span class="label label-sm label-icon label-success">
                                                             <i class="fa fa-plus"></i>
-                                                        </span></span>
+                                                        </span>
+                                                    </span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -432,14 +434,15 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <h3 class="uppercase">Редактируемые страницы</h3>
                             </li>
                             <li class="nav-item start ">
-                                <a href="javascript:;" class="nav-link nav-toggle">
+                                <a href="{% url 'get_page' 0 %}" class="nav-link nav-toggle">
                                     <i class="icon-wrench"></i>
-                                    <span class="title">Просмотреть/Изменить</span>
-                                    <span class="selected"></span>
-                                    <span class="arrow open"></span>
+                                    <span class="title">Главная страница</span>
+{#                                    <span class="selected"></span>#}
+{#                                    <span class="arrow open"></span>#}
                                 </a>
-                                <ul class="sub-menu">
-                                    <li class="nav-item start active open">
+                            </li>
+{#                                <ul class="sub-menu">#}
+{#                                    <li class="nav-item start active open">#}
 {#                                        <a href="{% url 'edit_pages' 2 %}" class="nav-link ">#}
 {#                                            <span class="title">FAQs</span>#}
 {#                                            <span class="selected"></span>#}
@@ -459,12 +462,11 @@ License: You must have a valid license purchased only from themeforest(the above
 {#                                        <a href="{% url 'edit_pages' 3 %}" class="nav-link ">#}
 {#                                            <span class="title">Программа лояльности</span>#}
 {#                                        </a>#}
-                                        <a href="#" class="nav-link ">
-                                            <span class="title">Программа лояльности</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+{#                                        <a href="#" class="nav-link ">#}
+{#                                            <span class="title">Программа лояльности</span>#}
+{#                                        </a>#}
+{#                                    </li>#}
+{#                                </ul>#}
                         {% endif %}
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser or request.user.is_seo_manager %}

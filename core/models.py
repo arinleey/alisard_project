@@ -1,4 +1,5 @@
 from django.db import models
+from core.models_utils import pages_path
 from core.models_utils import projects_path
 from core.models_utils import services_path
 
@@ -22,6 +23,28 @@ class Pages(models.Model):
 
     def __str__(self):
         return self.header
+
+
+class MainPage(models.Model):
+    # page = models.ForeignKey(Pages, related_name='main_page')
+    name = models.CharField(max_length=30, unique=True, null=False)
+    header_image = models.ImageField(upload_to=pages_path)
+    header_text_ru = models.TextField(max_length=120)
+    header_text_en = models.TextField(max_length=120)
+    active = models.BooleanField(default=False)
+
+
+class MainPageCarousel(models.Model):
+    main_page = models.ForeignKey(MainPage, related_name='main_page_carousel')
+    image = models.ImageField(upload_to=pages_path)
+    text = models.TextField(max_length=120)
+
+
+class MainPageIcons(models.Model):
+    main_page = models.ForeignKey(MainPage, related_name='main_page_icons')
+    icon = models.ImageField(upload_to=pages_path)
+    icon_text_ru = models.TextField(max_length=70)
+    icon_text_en = models.TextField(max_length=70)
 
 
 class Projects(models.Model):
@@ -64,3 +87,5 @@ class ServiceCategories(models.Model):
 class ServiceImages(models.Model):
     service = models.ForeignKey(Services, related_name='service_images')
     image = models.ImageField(upload_to=services_path, null=True, blank=True)
+
+
