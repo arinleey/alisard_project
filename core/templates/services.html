@@ -1,0 +1,147 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block css %}
+    {{ block.super }}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/screen.css' %}" rel="stylesheet">
+    <link href="{% static 'css/page.css' %}" rel="stylesheet">
+
+{% endblock css %}
+{% block content %}
+    <div class="img-main">
+        <div class="jhtghj">
+            <h3> Услуги компании</h3>
+        </div>
+    </div>
+
+    <div class="bread">
+        <ol class="breadcrumb">
+            <li><a href="{% url 'main_page' %}">Главная</a></li>
+            <li><a href="{% url 'main_page' %}">Услуги</a></li>
+            <li class="active" style="color: #333;"><strong>Все услуги</strong></li>
+        </ol>
+    </div>
+
+<section class="wrapper">
+    <div class="container-fostrap">
+        <div>
+            <img src="https://4.bp.blogspot.com/-7OHSFmygfYQ/VtLSb1xe8kI/AAAAAAAABjI/FxaRp5xW2JQ/s320/logo.png" class="fostrap-logo"/>
+            <h1 class="heading">
+                Bootstrap Card Responsive
+            </h1>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                            <img src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"> Bootstrap 3 Carousel FadeIn Out Effect
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Tutorial to make a carousel bootstrap by adding more wonderful effect fadein ...
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                            <img src="https://3.bp.blogspot.com/-bAsTyYC8U80/VtLZRKN6OlI/AAAAAAAABjY/kAoljiMALkQ/s400/material%2Bnavbar.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html"> Material Design Responsive Menu
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Material Design is a visual programming language made by Google. Language programming...
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="https://codepen.io/wisnust10/full/ZWERZK/" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                            <img src="https://4.bp.blogspot.com/-TDIJ17DfCco/Vtneyc-0t4I/AAAAAAAABmk/aa4AjmCvRck/s1600/cover.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">5  Button Hover Animation Effects
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    tutorials button hover animation, although very much a hover button is very beauti...
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content %}
+{% block scripts %}
+    {{ block.super }}
+
+    <script src="{% static 'js/modernizr.custom.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/toucheffects.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/button.js' %}" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var clickEvent = false;
+            $('#myCarousel').carousel({
+                interval:   4000
+            }).on('click', '.list-group li', function()
+            {
+                clickEvent = true;
+                $('.list-group li').removeClass('active');
+                $(this).addClass('active');
+            }).on('slid.bs.carousel', function(e)
+            {
+                if(!clickEvent) {
+                    var count = $('.list-group').children().length -1;
+                    var current = $('.list-group li.active');
+                    current.removeClass('active').next().addClass('active');
+                    var id = parseInt(current.data('slide-to'));
+                    if(count == id) {
+                        $('.list-group li').first().addClass('active');
+                    }
+                }
+                clickEvent = false;
+            });
+        })
+        $(window).load(function() {
+            var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+            var itemlength = $('#myCarousel .item').length;
+            var triggerheight = Math.round(boxheight/itemlength+1);
+            $('#myCarousel .list-group-item').outerHeight(triggerheight);
+        });
+    </script>
+{% endblock scripts %}

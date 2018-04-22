@@ -5,163 +5,123 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/screen.css' %}" rel="stylesheet">
     <link href="{% static 'css/page.css' %}" rel="stylesheet">
-    <link href="{% static 'css/menu.css' %}" rel="stylesheet">
-    <link href="{% static 'fonts/Museo-Sans-Cyr/MuseoSansCyrl-100.ttf' %}" type="text/css">
+    <link href="{% static 'css/news.css' %}" rel="stylesheet">
+
 {% endblock css %}
 {% block content %}
-    <div class="page__wrapper menu_position col-md-4 sticky-element">
-        <nav class="page__nav">
-            <ul>
-                <span class="page__logo">
-                    <a href="main_page.html"><img src="{% static 'images/logo.png' %}" style="width: 43%"></a>
-                </span>
-
-                <li><a href="#">КОМПАНИЯ</a>
-                    <ul class="nav_sub nav_main">
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Вакансии</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">ПРОЕКТЫ</a>
-                    <ul class="nav_sub">
-                        <li><a href="#">Объекты промышленного назначения</a></li>
-                        <li><a href="#">Спортивные сооружения</a></li>
-                        <li><a href="#">Сельскохозяйственные объекты</a></li>
-                        <li><a href="#">Логистичекие комплексы</a></li>
-                        <li><a href="#">Купольные конструкции</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">УСЛУГИ</a>
-                    <ul class="nav_sub">
-                        <li><a href="#">Строительство КДК</a></li>
-                        <li><a href="#">Деревянные дома</a></li>
-                        <li><a href="#">Ремонт и реконструкции</a></li>
-                        <li><a href="#">Металлоконструкции</a></li>
-                        <li><a href="#">Ландшафтный дизайн</a></li>
-                    </ul>
-                </li>
-                <li class="nav__active" ><a href="#">КОНТАКТЫ</a></li>
-            </ul>
-
-            <div class="head_txt">
-                <h4>САНКТ-ПЕТЕРБУРГ</h4>
-                <p>Ново-Рославльская, д. 3а</p>
-                <h4 class="phone_head"> +7 (981) 155 66 55</h4>
-            </div>
-        </nav>
-    </div>
-
-
-{#<div class="col-md-8 ">#}
-    <div class="rop__bg">
-        <div class="bread">
-            <ol class="breadcrumb">
-                <li>
-                    <a href="main_page.html">Главная</a>
-                </li>
-                <li class="active" style="color: #D3D3D3;"><strong>Контакты</strong></li>
-            </ol>
-        </div>
-        <div class="txt_h3">
-            <h3> КОНТАКТЫ</h3>
+    <div class="img-main">
+        <div class="jhtghj">
+            <h3> Контакты</h3>
         </div>
     </div>
-    <div class="contain_header">
-        <div class="backgroundbloc">
-            <p>Мы принимаем звонки в рабочее время, с 10:00 по 20:00, ежедневно. С нами можно связаться через социальные сети.</p>
-        </div>
-        <div class="col-md-8 header_bloc">
-            <h3>ООО "АЛИСАРД"</h3>
-{#            <div class="contacts_info">#}
-{#                <p><i class="fa fa-map-marker" aria-hidden="true"></i><strong>АДРЕС:</strong>214018, г. Смоленск ул.#}
-{#                    <br>Ново-Рославльская, д. 3а 3 этаж, офис №11</p>#}
-{#                <p><i class="fa fa-phone" aria-hidden="true"></i><strong>ТЕЛЕФОН:</strong>+7 (981) 155 66 55</p>#}
-{#                <p><strong>Viber:</strong>+7 (981) 155 66 55</p>#}
-{#                <p><i class="fa fa-whatsapp" aria-hidden="true"></i><strong>WhatsApp:</strong>+7 (981) 155 66 55</p>#}
-{#                <p><i class="fa fa-skype" aria-hidden="true"></i><strong>Skype:</strong>alisard</p>#}
-{#                <p><i class="fa fa-envelope-o" aria-hidden="true"></i><strong>E-mail:</strong>alisard_kdk@gmail.com</p>#}
+
+    <div class="bread">
+        <ol class="breadcrumb">
+            <li><a href="{% url 'main_page' %}">Главная</a></li>
+            <li class="active" style="color: #333;"><strong>Контакты</strong></li>
+        </ol>
+    </div>
+
+{#    <div class="contact-wrapper">#}
+{#        <form class="form-horizontal" role="form" method="post" action="contact.php">#}
 {##}
-{##}
-{##}
+{#            <div class="form-group">#}
+{#                <div class="col-sm-12">#}
+{#                    <input type="text" class="form-control" id="name" placeholder="Ваше Имя" name="name" value="">#}
+{#                </div>#}
 {#            </div>#}
-        </div>
-    </div>
+{##}
+{#            <div class="form-group">#}
+{#                <div class="col-sm-12">#}
+{#                    <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value="">#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <textarea class="form-control" rows="10" placeholder="Что Вас интересует?" name="message"></textarea>#}
+{##}
+{#            <button class="btn btn-primary send-button" id="submit" type="submit" value="Отправить">#}
+{#                <div class="button" style="text-align: center">#}
+{#                    <i class="fa fa-paper-plane"></i><span class="send-text">Отправить</span>#}
+{#                </div>#}
+{#            </button>#}
+{#        </form>#}
+{##}
+{#      <div class="direct-contact-container">#}
+{##}
+{#        <ul class="contact-list">#}
+{#          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">SEATTLE | WA</span></i></li>#}
+{##}
+{#          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>#}
+{##}
+{#          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">venkman@gmail.com</a></span></i></li>#}
+{##}
+{#        </ul>#}
+{##}
+{#        <hr>#}
+{#        <ul class="social-media-list">#}
+{#          <li><a href="#" target="_blank" class="contact-icon">#}
+{#            <i class="fa fa-github" aria-hidden="true"></i></a>#}
+{#          </li>#}
+{#          <li><a href="#" target="_blank" class="contact-icon">#}
+{#            <i class="fa fa-twitter" aria-hidden="true"></i></a>#}
+{#          </li>#}
+{#          <li><a href="#" target="_blank" class="contact-icon">#}
+{#            <i class="fa fa-instagram" aria-hidden="true"></i></a>#}
+{#          </li>#}
+{#          <li><a href="#" target="_blank" class="contact-icon">#}
+{#            <i class="fa fa-codepen" aria-hidden="true"></i></a>#}
+{#          </li>#}
+{#        </ul>#}
+{#        <hr>#}
+{##}
+{##}
+{##}
+{#      </div>#}
+{##}
+{#  </div>#}
 
-    <div class="contact_form_page col-md-10">
-        <div name="contact">
-            <div class="table-full">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-offset-1">
-                            <div class="row">
-                                <div class="col-sm-5 cl-white" style="background-color:#182737; padding: 50px 40px;">
-                                    <address>
-                                        <h3>ООО "АЛИСАРД"</h3>
-                                        <div class="contacts_info">
-                                            <p><i class="fa fa-map-marker" aria-hidden="true"></i><strong>АДРЕС:</strong>214018, г. Смоленск ул. Ново-Рославльская, д. 3а 3 этаж, офис №11</p>
-                                            <p><i class="fa fa-phone" aria-hidden="true"></i><strong>ТЕЛЕФОН:</strong>+7 (981) 155 66 55</p>
-                                            <p><i class="fa fa-whatsapp" aria-hidden="true"></i><strong>Viber:</strong>+7 (981) 155 66 55</p>
-                                            <p><i class="fa fa-whatsapp" aria-hidden="true"></i><strong>WhatsApp:</strong>+7 (981) 155 66 55</p>
-                                            <p><i class="fa fa-skype" aria-hidden="true"></i><strong>Skype:</strong>alisard</p>
-                                            <p><i class="fa fa-envelope-o" aria-hidden="true"></i><strong>E-mail:</strong>alisard_kdk@gmail.com</p>
-                                        </div>
-                                    </address>
-                                </div>
-                                <div class="col-sm-5 col-sm-offset-5 cl-white" style=" padding: 15px; margin-left: 50px;">
-                                    <form action="mailto:#" method="post">
-                                        <div class="name">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <input type="text" name="name" class="name" placeholder="Ваше Имя" required="">
-                                        </div>
-                                        <div class="email">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <input type="text" name="email" class="email" placeholder="Ваш e-mail(не обязательно)" required="">
-                                        </div>
-                                        <div class="phone">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <input type="text" name="phone" class="phone" placeholder="Ваш номер телефона" required="">
-                                        </div>
-                                        <input type="submit" value="ОТПРАВИТЬ" class="btn btn-default">
-                                    </form>
-                                </div>
+<div class="container col-md-12">
+		<div class="innerwrap">
+			<section class="section2 clearfix">
+				<div class="col2 column1 first">
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="sec2map" style='overflow:hidden;height:550px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(19.075314480255834,72.88153973865361),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.075314480255834,72.88153973865361)});infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>mumbai<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+				<div class="col2 column2 last">
+					<div class="sec2innercont">
+						<div class="sec2addr">
+                            <div class="contact-adress">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>214018, г. Cанкт-Петурбург ул. Ново-Рославльская, д. 3а 3 этаж, офис №11</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+							<p><span class="collig">Phone :</span> +91 976885083</p>
+							<p><span class="collig">Email :</span> vivek.mengu016@gmail.com</p>
+							<p><span class="collig">Fax :</span> +91 9768850839</p>
+						</div>
+					</div>
+					<div class="sec2contactform">
+						<h3 class="sec2frmtitle">Есть вопросы? Напишите нам!</h3>
+						<form action="">
+							<div class="clearfix">
+								<input class="col2 first" type="text" placeholder="FirstName">
+								<input class="col2 last" type="text" placeholder="LastName">
+							</div>
+							<div class="clearfix">
+								<input  class="col2 first" type="Email" placeholder="Email">
+								<input class="col2 last" type="text" placeholder="Contact Number">
+							</div>
+							<div class="clearfix">
+								<textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+							</div>
+							<div class="clearfix"><input type="submit" value="Send"></div>
+						</form>
+					</div>
 
-    <div class="yandexmaps col-md-12">
-        <div class="text-center">
-            <h4>Нас легко найти в социальных сетях </h4>
-            <a href="http://facebook.com" class="btn btn-social-icon btn-facebook">
-                <i class="fa fa-facebook"></i></a>
-            <a class="btn btn-social-icon btn-bitbucket">
-                <i class="fa fa-bitbucket"></i></a>
-            <a class="btn btn-social-icon btn-dropbox">
-                <i class="fa fa-dropbox"></i></a>
-            <a class="btn btn-social-icon btn-flickr">
-                <i class="fa fa-flickr"></i></a>
-            <a class="btn btn-social-icon btn-foursquare">
-                <i class="fa fa-foursquare"></i></a>
-            <a class="btn btn-social-icon btn-github">
-                <i class="fa fa-github"></i></a>
-            <a class="btn btn-social-icon btn-google-plus">
-                <i class="fa fa-google-plus"></i></a>
-            <a class="btn btn-social-icon btn-instagram">
-                <i class="fa fa-instagram"></i></a>
-            <a class="btn btn-social-icon btn-linkedin">
-                <i class="fa fa-linkedin"></i></a>
-            <a class="btn btn-social-icon btn-tumblr">
-                <i class="fa fa-tumblr"></i></a>
-            <a class="btn btn-social-icon btn-twitter">
-                <i class="fa fa-twitter"></i></a>
-            <a class="btn btn-social-icon btn-vk">
-                <i class="fa fa-vk"></i></a>
-        </div>
-    </div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
 
 
 {% endblock content %}
@@ -173,59 +133,35 @@
     <script src="{% static 'js/button.js' %}" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
 
-
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('.mayfooter').css('margin-left', '250px');
-            var nav = $(".page__nav");
-            var nav_item = $(".page__nav ul li")
-            var sn = $(".page__nav ul ul");
-        {#  var pc = $(".page__content");#}
-            var nav_sub = $(".nav_sub");
-  //get the navigations width and set the "left" for the "dropdown"
-            sn.css("left", nav.width());
-  //Bind the different events for the items
-            nav_item.bind("mouseover", open_sub);
-            nav_item.bind("mouseout", close_sub);
-  //Open the submenu
-            function open_sub() {
-                $(this).find("ul").css("min-width", "320px");
-            }
-            function close_sub() {
-                $(this).find("ul").css("min-width", "0");
-            }
-
-            $('pre code').each(function(i, e) {
-                hljs.highlightBlock(e);
-            });
-        });
-        var StickyElement = function(node){
-            var doc = $(document),
-                fixed = false,
-                anchor = node.find('.sticky-anchor'),
-                content = node.find('.sticky-content');
-            var onScroll = function(e){
-                var docTop = doc.scrollTop(),
-                    anchorTop = anchor.offset.top;
-                console.log('scroll', docTop, anchorTop);
-                if(docTop > anchorTop){
-                    if(!fixed){
-                        anchor.height(content.outerHeight());
-                        content.addClass('fixed');
-                        fixed = true;
+        $(document).ready(function(){
+            var clickEvent = false;
+            $('#myCarousel').carousel({
+                interval:   4000
+            }).on('click', '.list-group li', function()
+            {
+                clickEvent = true;
+                $('.list-group li').removeClass('active');
+                $(this).addClass('active');
+            }).on('slid.bs.carousel', function(e)
+            {
+                if(!clickEvent) {
+                    var count = $('.list-group').children().length -1;
+                    var current = $('.list-group li.active');
+                    current.removeClass('active').next().addClass('active');
+                    var id = parseInt(current.data('slide-to'));
+                    if(count == id) {
+                        $('.list-group li').first().addClass('active');
                     }
                 }
-                else
-                    {
-                        if(fixed){
-                            anchor.height(0);
-                            content.removeClass('fixed');
-                            fixed = false;
-                        }
-                    }
-            };
-            $(window).on('scroll', onScroll);
-        };
-        var demo = new StickyElement($('#sticky'));
+                clickEvent = false;
+            });
+        })
+        $(window).load(function() {
+            var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+            var itemlength = $('#myCarousel .item').length;
+            var triggerheight = Math.round(boxheight/itemlength+1);
+            $('#myCarousel .list-group-item').outerHeight(triggerheight);
+        });
     </script>
 {% endblock scripts %}
