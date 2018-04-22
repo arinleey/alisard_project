@@ -20,6 +20,8 @@ from core.views import news_about
 from core.views import about
 from core.views import main_page
 from core.views import project
+from core.views import services
+from core.views import construction_kdk
 
 
 urlpatterns = [
@@ -29,4 +31,6 @@ urlpatterns = [
     url(r'^$', main_page, name="main_page"),
     url(r'^news/$', news, name="news"),
     url(r'^project/$', project, name="project"),
+    url(r'^services/$', services, name="services"),
+    url(r'^construction_kdk/$', construction_kdk, name="construction_kdk"),
 ]

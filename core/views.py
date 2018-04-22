@@ -29,3 +29,11 @@ def contacts(request):
 
 def project(request):
     return render(request, 'project.html')
+
+
+def services(request):
+    return render(request, 'services.html')
+
+
+def construction_kdk(request):
+    return render(request, 'construction_kdk.html')

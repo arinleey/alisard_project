@@ -1,10 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-dfghjmkj
-</body>
-</html>
+{% extends 'index.html' %}
+{% load static %}
+{% block css %}
+    {{ block.super }}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/screen.css' %}" rel="stylesheet">
+    <link href="{% static 'css/page.css' %}" rel="stylesheet">
+    <link href="{% static 'css/news.css' %}" rel="stylesheet">
+
+{% endblock css %}
+{% block content %}
+    <div class="img-main">
+        <div class="jhtghj">
+            <h3> ПРОЕКТЫ</h3>
+        </div>
+    </div>
+
+    <div class="bread">
+        <ol class="breadcrumb">
+            <li><a href="{% url 'main_page' %}">Главная</a></li>
+            <li class="active" style="color: #333;"><strong>Проекты</strong></li>
+        </ol>
+    </div>
+
+
+
+    <div class="container" style="text-align: center">
+            <div class="col-md-12 col-md-offset-0">
+                <nav class="filter-menu-news">
+                    <ul>
+                        <li><a href="#">Все новости</a></li>
+                        <li><a href="#">Новости компании</a></li>
+                        <li><a href="#">В процессе строительства</a></li>
+                        <li><a href="#">Законченные объекты</a></li>
+                        <li><a href="#">Выставки, семинары</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+
+
+    <div class="col-md-12 container">
+    <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}"><br>
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+        <figure class="block-fill">
+         <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+        <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+        <figure class="block-fill">
+         <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+     <figure class="block-fill">
+        <img src="{% static 'images/s1.jpg' %}">
+        <figcaption>
+            <h3>Fletch Skinner</h3>
+            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+</div>
+    <div class="container col-md-12  paginationposition">
+        <ul class="pagination">
+            <li class="disabled"><a href="#">Назад</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li ><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">Вперёд</a></li>
+        </ul>
+    </div>
+
+{% endblock content %}
+{% block scripts %}
+    {{ block.super }}
+
+    <script src="{% static 'js/modernizr.custom.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/toucheffects.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/button.js' %}" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var clickEvent = false;
+            $('#myCarousel').carousel({
+                interval:   4000
+            }).on('click', '.list-group li', function()
+            {
+                clickEvent = true;
+                $('.list-group li').removeClass('active');
+                $(this).addClass('active');
+            }).on('slid.bs.carousel', function(e)
+            {
+                if(!clickEvent) {
+                    var count = $('.list-group').children().length -1;
+                    var current = $('.list-group li.active');
+                    current.removeClass('active').next().addClass('active');
+                    var id = parseInt(current.data('slide-to'));
+                    if(count == id) {
+                        $('.list-group li').first().addClass('active');
+                    }
+                }
+                clickEvent = false;
+            });
+        })
+        $(window).load(function() {
+            var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+            var itemlength = $('#myCarousel .item').length;
+            var triggerheight = Math.round(boxheight/itemlength+1);
+            $('#myCarousel .list-group-item').outerHeight(triggerheight);
+        });
+    </script>
+{% endblock scripts %}

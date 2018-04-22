@@ -1,0 +1,222 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block css %}
+    {{ block.super }}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/screen.css' %}" rel="stylesheet">
+    <link href="{% static 'css/page.css' %}" rel="stylesheet">
+    <link href="{% static 'css/gallery.css' %}" rel="stylesheet">
+
+{% endblock css %}
+
+{% block content %}
+    <div class="img-main">
+        <div class="jhtghj">
+            <h3> Строительство кдк</h3>
+        </div>
+    </div>
+
+    <div class="bread">
+        <ol class="breadcrumb">
+            <li><a href="{% url 'main_page' %}">Главная</a></li>
+            <li><a href="{% url 'main_page' %}">Услуги</a></li>
+            <li class="active" style="color: #333;"><strong>Строительство кдк</strong></li>
+        </ol>
+    </div>
+ <div class="col-md-12 aboutcompany" style="text-align: center">
+             <h5 class="news-headline">Строительство кдк</h5>
+ </div>
+    <div class="container textcompany col-md-12">
+    <div class="centertxt">
+        <p><strong>ЕвроХим</strong> – один из наиболее быстро развивающихся крупных производителей удобрений.<br><br>
+
+Вертикально интегрированная бизнес-модель и доступ к дешевому сырью и энергоресурсам обеспечивают ЕвроХиму уникальные конкурентные преимущества по себестоимости продукции. Инвестиции в разработку калийных месторождений еще на шаг приблизят нас к мировому лидерству в отрасли после ввода активов в эксплуатацию.<br><br>
+
+ЕвроХим – агрохимическая компания с вертикально интегрированной бизнес-моделью, сочетающей доступ к дешевым природным ресурсам и производственным активам, собственную логистическую инфраструктуру, подразделения по оказанию консультационных услуг и международную сбытовую и дистрибуторскую сеть.</p>
+    </div>
+    </div>
+
+
+<div class="col-md-12 gallnews">
+<input type="checkbox" id="pic-1"/>
+    <label for="pic-1" class="lightbox"><img src="//unsplash.it/800/600?image=1"/></label>
+<input type="checkbox" id="pic-2"/>
+<label for="pic-2" class="lightbox"><img src="//unsplash.it/800/600?image=20"/></label>
+<input type="checkbox" id="pic-3"/>
+<label for="pic-3" class="lightbox"><img src="//unsplash.it/800/600?image=224"/></label>
+<input type="checkbox" id="pic-4"/>
+<label for="pic-4" class="lightbox"><img src="//unsplash.it/800/600?image=42"/></label>
+<input type="checkbox" id="pic-5"/>
+
+
+<div class="grid">
+ <label for="pic-1" class="grid-item"><img src="//unsplash.it/400/300?image=1"/></label>
+ <label for="pic-2" class="grid-item"><img src="//unsplash.it/400/300?image=20"/></label>
+ <label for="pic-3" class="grid-item"><img src="//unsplash.it/400/300?image=224"/></label>
+ <label for="pic-4" class="grid-item"><img src="//unsplash.it/400/300?image=42"/></label>
+
+</div>
+    </div>
+
+    <div class="container textcompany col-md-6">
+    <div class="centertxt">
+        <p>Вы можете скачать файлы PDF проектов на тему "Стромтельство КДК </div>
+    </div>
+
+    <div class="container">
+  <div class="dc-view-switcher">
+    <button data-trigger="grid-view"></button>
+    <button data-trigger="list-view" class="active"></button>
+  </div>
+  <div data-view="list-view" class="download-cards">
+    <article class="download-card">
+      <div class="download-card__icon-box"><img src="https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png" /></div>
+      <div class="download-card__content-box">
+        <div class="content">
+          <h2 class="download-card__content-box__catagory">Photos</h2>
+          <h3 class="download-card__content-box__title">Tool Safety Products</h3>
+          <p class="download-card__content-box__description">High & low-res photos for print and web media. </p>
+          <a class="button"> <i class="fa fa-cloud-download"></i> Download</a>
+        </div>
+      </div>
+    </article>
+    <article class="download-card">
+      <div class="download-card__icon-box"><img src="https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png" /></div>
+      <div class="download-card__content-box">
+        <div class="content">
+          <h2 class="download-card__content-box__catagory">PDF</h2>
+          <h3 class="download-card__content-box__title">Tool Safety Catalogues</h3>
+          <p class="download-card__content-box__description">Print and web ready PDF's. </p>
+          <a class="button"> <i class="fa fa-cloud-download"></i> Download</a>
+        </div>
+      </div>
+    </article>
+    <article class="download-card">
+      <div class="download-card__icon-box"><img src="https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png" /></div>
+      <div class="download-card__content-box">
+        <div class="content">
+          <h2 class="download-card__content-box__catagory">Photos</h2>
+          <h3 class="download-card__content-box__title">Height Safety Products</h3>
+          <p class="download-card__content-box__description">High & low-res photos for print and web media. </p>
+          <a class="button"> <i class="fa fa-cloud-download"></i> Download</a>
+        </div>
+      </div>
+    </article>
+    <article class="download-card">
+      <div class="download-card__icon-box"><img src="https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png" /></div>
+      <div class="download-card__content-box">
+        <div class="content">
+          <h2 class="download-card__content-box__catagory">Document</h2>
+          <h3 class="download-card__content-box__title">Course Booking Form</h3>
+          <p class="download-card__content-box__description">Word document </p>
+          <a class="button"> <i class="fa fa-cloud-download"></i> Download</a>
+        </div>
+      </div>
+    </article>
+    <article class="download-card">
+      <div class="download-card__icon-box"><img src="https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png" /></div>
+      <div class="download-card__content-box">
+        <div class="content">
+          <h2 class="download-card__content-box__catagory">Photos</h2>
+          <h3 class="download-card__content-box__title">Height Safety Products</h3>
+          <p class="download-card__content-box__description">High & low-res photos for print and web media. </p>
+          <a class="button"> <i class="fa fa-cloud-download"></i> Download</a>
+        </div>
+      </div>
+    </article>
+    <article class="download-card">
+      <div class="download-card__icon-box"><img src="https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png" /></div>
+      <div class="download-card__content-box">
+        <div class="content">
+          <h2 class="download-card__content-box__catagory">Photos</h2>
+          <h3 class="download-card__content-box__title">Height Safety Products</h3>
+          <p class="download-card__content-box__description">High & low-res photos for print and web media. </p>
+          <a class="button"> <i class="fa fa-cloud-download"></i> Download</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+{% endblock content %}
+{% block scripts %}
+    {{ block.super }}
+
+<script src="{% static 'js/modernizr.custom.js' %}" type="text/javascript"></script>
+ <script src="{% static 'js/toucheffects.js' %}" type="text/javascript"></script>
+     <script src="{% static 'js/button.js' %}" type="text/javascript"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+popup = {
+  init: function(){
+    $('figure').click(function(){
+      popup.open($(this));
+    });
+
+    $(document).on('click', '.popup img', function(){
+      return false;
+    }).on('click', '.popup', function(){
+      popup.close();
+    })
+  },
+  open: function($figure) {
+    $('.gallery').addClass('pop');
+    $popup = $('<div class="popup" />').appendTo($('body'));
+    $fig = $figure.clone().appendTo($('.popup'));
+    $bg = $('<div class="bg" />').appendTo($('.popup'));
+    $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+    $shadow = $('<div class="shadow" />').appendTo($fig);
+    src = $('img', $fig).attr('src');
+    $shadow.css({backgroundImage: 'url(' + src + ')'});
+    $bg.css({backgroundImage: 'url(' + src + ')'});
+    setTimeout(function(){
+      $('.popup').addClass('pop');
+    }, 10);
+  },
+  close: function(){
+    $('.gallery, .popup').removeClass('pop');
+    setTimeout(function(){
+      $('.popup').remove()
+    }, 100);
+  }
+}
+
+popup.init()
+
+
+var downloadGrid = (function(){
+
+  "use strict";
+
+  var $cardContainer = $('.download-cards');
+  var $downloadCard  = $('.download-card__content-box');
+  var $viewTrigger   = $('button').attr('data', 'trigger');
+
+  function swapTriggerActiveClass(e) {
+    $viewTrigger.removeClass('active');
+    $(e.target).addClass('active');
+  }
+
+  function swapView(e) {
+    var $currentView = $(e.target).attr('data-trigger');
+    $cardContainer.attr('data-view', $currentView);
+  }
+
+  $(document).ready(function(){
+    // Event Listener
+    $viewTrigger.click(function(e){
+      swapTriggerActiveClass(e);
+      swapView(e);
+    });
+  });
+
+})();
+
+
+
+    </script>
+{% endblock scripts %}
