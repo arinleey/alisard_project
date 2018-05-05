@@ -1,0 +1,39 @@
+.logo-block{
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin-top: -21px;
+ }
+.logo-block img {
+    width: 100px;
+}
+.phone {
+     margin-top: 23px;
+    text-align: right;
+}
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+.contact-alisard p{
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 6px
+}
+.contact-alisard strong {
+    color: #333
+}
+.contact-inform{
+    margin-left: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.phone-contact p{
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #414042;
+
+}
+/*ppppppppppppppppp*/

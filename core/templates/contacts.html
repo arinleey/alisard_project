@@ -6,10 +6,14 @@
     <link href="{% static 'css/screen.css' %}" rel="stylesheet">
     <link href="{% static 'css/page.css' %}" rel="stylesheet">
     <link href="{% static 'css/news.css' %}" rel="stylesheet">
+    <link href="{% static 'css/menu.css' %}" rel="stylesheet">
 
 {% endblock css %}
 {% block content %}
-    <div class="img-main">
+
+
+
+    <div class="img-main-con">
         <div class="jhtghj">
             <h3> Контакты</h3>
         </div>
@@ -22,97 +26,58 @@
         </ol>
     </div>
 
-{#    <div class="contact-wrapper">#}
-{#        <form class="form-horizontal" role="form" method="post" action="contact.php">#}
-{##}
-{#            <div class="form-group">#}
-{#                <div class="col-sm-12">#}
-{#                    <input type="text" class="form-control" id="name" placeholder="Ваше Имя" name="name" value="">#}
-{#                </div>#}
-{#            </div>#}
-{##}
-{#            <div class="form-group">#}
-{#                <div class="col-sm-12">#}
-{#                    <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value="">#}
-{#                </div>#}
-{#            </div>#}
-{##}
-{#            <textarea class="form-control" rows="10" placeholder="Что Вас интересует?" name="message"></textarea>#}
-{##}
-{#            <button class="btn btn-primary send-button" id="submit" type="submit" value="Отправить">#}
-{#                <div class="button" style="text-align: center">#}
-{#                    <i class="fa fa-paper-plane"></i><span class="send-text">Отправить</span>#}
-{#                </div>#}
-{#            </button>#}
-{#        </form>#}
-{##}
-{#      <div class="direct-contact-container">#}
-{##}
-{#        <ul class="contact-list">#}
-{#          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">SEATTLE | WA</span></i></li>#}
-{##}
-{#          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>#}
-{##}
-{#          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">venkman@gmail.com</a></span></i></li>#}
-{##}
-{#        </ul>#}
-{##}
-{#        <hr>#}
-{#        <ul class="social-media-list">#}
-{#          <li><a href="#" target="_blank" class="contact-icon">#}
-{#            <i class="fa fa-github" aria-hidden="true"></i></a>#}
-{#          </li>#}
-{#          <li><a href="#" target="_blank" class="contact-icon">#}
-{#            <i class="fa fa-twitter" aria-hidden="true"></i></a>#}
-{#          </li>#}
-{#          <li><a href="#" target="_blank" class="contact-icon">#}
-{#            <i class="fa fa-instagram" aria-hidden="true"></i></a>#}
-{#          </li>#}
-{#          <li><a href="#" target="_blank" class="contact-icon">#}
-{#            <i class="fa fa-codepen" aria-hidden="true"></i></a>#}
-{#          </li>#}
-{#        </ul>#}
-{#        <hr>#}
-{##}
-{##}
-{##}
-{#      </div>#}
-{##}
-{#  </div>#}
+    <div class="col-md-12">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="contact-alisard">
+                    <p class="alisard"><strong>Общество с ограниченной ответственностью "АЛИСАРД"</strong></p>
+                    <p><strong>Адрес:</strong> 197375 г. Санкт-Петербург, Новоколомяжский проспект 4, 5 эт.</p>
+                    <p><strong>ИНН / КПП</strong> 7814713356 / 781401001</p>
+                    <p><strong>Р/С </strong> 40702810955000002595</p>
+                    <p><strong>Банк</strong> Северо-Западный Банк ПАО Сбербанк</p>
+                    <p><strong>Кор/с</strong> 30101810500000000653</p>
+                    <p><strong>БИК</strong> 044030653</p>
+                    <p><strong>Генеральный директор</strong> - Фурман Александр Евгеньевич</p>
+            </div>
+        </div>
+
+            <div class="col-md-6">
+                <div class="social-icon">
+                </div>
+                <div class="contact-inform">
+                    <div class="phone-contact">
+                        <p><img src="{% static 'images/ico/telegram_icon.ico' %}"> <img src="{% static 'images/ico/viber_14147.ico' %}">  <img src="{% static 'images/ico/whatsapp_icon.ico' %}"> +7 (981) 155 66 55</p>
+                        <p><img src="{% static 'images/ico/phone-handset_i.ico' %}">  +7960230450</p>
+                        <p><img src="{% static 'images/ico/email-outlined.ico' %}">  alisard@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="container col-md-12">
 		<div class="innerwrap">
 			<section class="section2 clearfix">
 				<div class="col2 column1 first">
-					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="sec2map" style='overflow:hidden;height:550px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(19.075314480255834,72.88153973865361),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.075314480255834,72.88153973865361)});infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>mumbai<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="sec2map" style='overflow:hidden;height:550px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(19.075314480255834,72.88153973865361),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.075314480255834,72.88153973865361)});infowindow = new google.maps.InfoWindow({content:'<strong>Наш офис</strong><br>mumbai<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 				</div>
 				<div class="col2 column2 last">
-					<div class="sec2innercont">
-						<div class="sec2addr">
-                            <div class="contact-adress">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <p>214018, г. Cанкт-Петурбург ул. Ново-Рославльская, д. 3а 3 этаж, офис №11</p>
-                            </div>
-							<p><span class="collig">Phone :</span> +91 976885083</p>
-							<p><span class="collig">Email :</span> vivek.mengu016@gmail.com</p>
-							<p><span class="collig">Fax :</span> +91 9768850839</p>
-						</div>
-					</div>
+
 					<div class="sec2contactform">
-						<h3 class="sec2frmtitle">Есть вопросы? Напишите нам!</h3>
+{#						<h3 class="sec2frmtitle">Остались вопросы? Напишите нам!</h3>#}
 						<form action="">
 							<div class="clearfix">
-								<input class="col2 first" type="text" placeholder="FirstName">
-								<input class="col2 last" type="text" placeholder="LastName">
+								<input class="col2 first" type="text" placeholder="Имя">
+								<input class="col2 last" type="text" placeholder="Организация">
 							</div>
 							<div class="clearfix">
 								<input  class="col2 first" type="Email" placeholder="Email">
-								<input class="col2 last" type="text" placeholder="Contact Number">
+								<input class="col2 last" type="text" placeholder="Номер телефона">
 							</div>
 							<div class="clearfix">
-								<textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+								<textarea name="textarea" id="" cols="30" rows="7"></textarea>
 							</div>
-							<div class="clearfix"><input type="submit" value="Send"></div>
+							<div class="clearfix"><input type="submit" value="ОТПРАВИТЬ"></div>
 						</form>
 					</div>
 
@@ -121,7 +86,6 @@
 
 		</div>
 	</div>
-
 
 
 {% endblock content %}
@@ -134,34 +98,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-        $(document).ready(function(){
-            var clickEvent = false;
-            $('#myCarousel').carousel({
-                interval:   4000
-            }).on('click', '.list-group li', function()
-            {
-                clickEvent = true;
-                $('.list-group li').removeClass('active');
-                $(this).addClass('active');
-            }).on('slid.bs.carousel', function(e)
-            {
-                if(!clickEvent) {
-                    var count = $('.list-group').children().length -1;
-                    var current = $('.list-group li.active');
-                    current.removeClass('active').next().addClass('active');
-                    var id = parseInt(current.data('slide-to'));
-                    if(count == id) {
-                        $('.list-group li').first().addClass('active');
-                    }
-                }
-                clickEvent = false;
-            });
-        })
-        $(window).load(function() {
-            var boxheight = $('#myCarousel .carousel-inner').innerHeight();
-            var itemlength = $('#myCarousel .item').length;
-            var triggerheight = Math.round(boxheight/itemlength+1);
-            $('#myCarousel .list-group-item').outerHeight(triggerheight);
-        });
+
     </script>
 {% endblock scripts %}

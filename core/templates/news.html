@@ -18,7 +18,7 @@
     <div class="bread">
         <ol class="breadcrumb">
             <li><a href="{% url 'main_page' %}">Главная</a></li>
-            <li class="active" style="color: #333;"><strong>Новости</strong></li>
+            <li class="active" style="color: #2978ad;"><strong>Новости</strong></li>
         </ol>
     </div>
 
@@ -78,119 +78,122 @@
         </div><!-- End Carousel -->
     </div>
 
-    <div class="container" style="text-align: center">
-            <div class="col-md-12 col-md-offset-0">
-                <nav class="filter-menu-news">
-                    <ul>
-                        <li><a href="#">Все новости</a></li>
-                        <li><a href="#">Новости компании</a></li>
-                        <li><a href="#">В процессе строительства</a></li>
-                        <li><a href="#">Законченные объекты</a></li>
-                        <li><a href="#">Выставки, семинары</a></li>
+        <div class="container">
+            <div class="row">
+                <div class="gallery  col-md-6 col-md-offset-3 aboutcompany">
+                    <div align="center">
+                        <button class="filter-button bntcd" data-filter="all">Методы строительства</button>
+                        <button class="filter-button bntcd" data-filter="hdpe">Новости строительства</button>
+                        <button class="filter-button bntcd" data-filter="sprinkle">Новости компании Алисард</button>
+                        <button class="filter-button bntcd" data-filter="spray">Все новости строительства</button>
+{#                        <button class="filter-button bntcd" data-filter="irrigation">Встречи, выставки</button>#}
+                    </div>
+                </div>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe gatjks">
+                        <li>
+                            <figure class="blok_news">
+                                <img src="{% static 'images/DSC_0882.JPG' %}">
+                                <div class="date"><span class="day">28</span><span class="month">Мая</span></div><i class="ion-film-marker"></i>
+                                <figcaption>
+                                    <h3>The World Ended Yesterday</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+                                    </p>
+                                    <button>Подробнее</button>
+                                </figcaption><a href="{% url 'news_about' %}"></a>
+                            </figure>
+                        </li>
                     </ul>
-                </nav>
+                </figure>
+                <figure>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <li>
+                            <figure class="blok_news">
+                               <img src="{% static 'images/DSC_0882.JPG' %}">
+                                <div class="date"><span class="day">13</span><span class="month">Мая</span></div><i class="ion-film-marker"></i>
+                                <figcaption>
+                                    <h3>The World Ended Yesterday</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+                                    </p>
+                                    <button>Подробнее</button>
+                                </figcaption><a href="#"></a>
+                            </figure>
+                        </li>
+                    </ul>
+                </figure>
+                <figure>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <li>
+                            <figure class="blok_news">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample66.jpg" alt="sample66"/>
+                                <div class="date"><span class="day">28</span><span class="month">Мая</span></div><i class="ion-film-marker"></i>
+                                <figcaption>
+                                    <h3>The World Ended Yesterday</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+                                    </p>
+                                    <button>Подробнее</button>
+                                </figcaption><a href="#"></a>
+                            </figure>
+                        </li>
+                    </ul>
+                </figure>
+                <figure>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                        <li>
+                            <figure class="blok_news">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample66.jpg" alt="sample66"/>
+                                <div class="date"><span class="day">28</span><span class="month">Ноя</span></div><i class="ion-film-marker"></i>
+                                <figcaption>
+                                    <h3>The World Ended Yesterday</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+                                    </p>
+                                    <button>Подробнее</button>
+                                </figcaption><a href="#"></a>
+                            </figure>
+                        </li>
+                    </ul>
+                </figure>
+                <figure>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filterir rigation">
+                        <li>
+                            <figure class="blok_news">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample66.jpg" alt="sample66"/>
+                                <div class="date"><span class="day">28</span><span class="month">Дек</span></div><i class="ion-film-marker"></i>
+                                <figcaption>
+                                    <h3>The World Ended Yesterday</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+                                    </p>
+                                    <button>Подробнее</button>
+                                </figcaption><a href="#"></a>
+                            </figure>
+                        </li>
+                    </ul>
+                </figure>
+                <figure>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <li>
+                            <figure class="blok_news">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample66.jpg" alt="sample66"/>
+                                <div class="date"><span class="day">28</span><span class="month">Дек</span></div><i class="ion-film-marker"></i>
+                                <figcaption>
+                                    <h3>The World Ended Yesterday</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+                                    </p>
+                                    <button>Подробнее</button>
+                                </figcaption><a href="#"></a>
+                            </figure>
+                        </li>
+                    </ul>
+                </figure>
             </div>
-    </div>
+        </div>
 
 
-    <div class="col-md-12 container">
-    <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}"><br>
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-        <figure class="block-fill">
-         <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-        <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-        <figure class="block-fill">
-         <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-     <figure class="block-fill">
-        <img src="{% static 'images/s1.jpg' %}">
-        <figcaption>
-            <h3>Fletch Skinner</h3>
-            <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption>
-        <a href="#"></a>
-    </figure>
-</div>
     <div class="container col-md-12  paginationposition">
         <ul class="pagination">
             <li class="disabled"><a href="#">Назад</a></li>
@@ -213,6 +216,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
+               $("figure").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+            );
+        new WOW().init();
+        $(document).ready(function() {
+            $('.carousel').carousel();
+            $(document).ready(function(){
+                $(".filter-button").click(function(){
+                    var value = $(this).attr('data-filter');
+                    if(value == "all")
+                    {
+                        //$('.filter').removeClass('hidden');
+                          $('.filter').show('1000');
+                    }
+                    else
+                        {
+                            //$('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                            //$(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                            $(".filter").not('.'+value).hide('3000');
+                            $('.filter').filter('.'+value).show('3000');
+                        }
+                });
+                if ($(".filter-button").removeClass("active")) {
+                    $(this).removeClass("active");
+                }
+                $(this).addClass("active");
+            });
+        });
         $(document).ready(function(){
             var clickEvent = false;
             $('#myCarousel').carousel({

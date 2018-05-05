@@ -37,3 +37,7 @@ def services(request):
 
 def construction_kdk(request):
     return render(request, 'construction_kdk.html')
+
+
+def industrial_facilities(request):
+    return render(request, 'industrial_facilities.html')

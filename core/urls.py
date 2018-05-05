@@ -22,6 +22,7 @@ from core.views import main_page
 from core.views import project
 from core.views import services
 from core.views import construction_kdk
+from core.views import industrial_facilities
 
 
 urlpatterns = [
@@ -33,4 +34,5 @@ urlpatterns = [
     url(r'^project/$', project, name="project"),
     url(r'^services/$', services, name="services"),
     url(r'^construction_kdk/$', construction_kdk, name="construction_kdk"),
+    url(r'^industrial_facilities/$', industrial_facilities, name="industrial_facilities"),
 ]
