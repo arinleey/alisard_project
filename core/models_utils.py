@@ -5,11 +5,12 @@ import requests
 
 
 def pages_path(instance, filename):
-    return 'pages/%s/%s' % (instance.name, filename)
+    return 'pages/%s/%s' % (instance.template_name, filename)
+
 
 def projects_path(instance, filename):
-    return 'projects/%s/%s' % (instance.name, filename)
+    return 'projects/%s/%s' % (instance, filename)
 
 
 def services_path(instance, filename):
-    return 'services/%s/%s' % (instance.name, filename)
+    return 'services/%s/%s' % (instance, filename)

@@ -1,14 +1,336 @@
 {% extends 'admin_base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block css %}
     {{ block.super }}
 {% endblock css %}
 
 {% block main_content %}
-
+    <div class="row">
+        <div class="col-md-12 ">
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-red-sunglo">
+                        <i class="icon-settings font-red-sunglo"></i>
+                        <span class="caption-subject bold uppercase">{{ page_name }}</span>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                {% if template_name %}
+                    {% with template_name=template_name|stringformat:"s"|add:".html" %}
+                        {% include "admins/forms/"|add:template_name %}
+                    {% endwith %}
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- END SAMPLE FORM PORTLET-->
 {% endblock main_content %}
 
 {% block scripts %}
     {{ block.super }}
+    <script src="{% static 'plugins/ckeditor/ckeditor.js' %}"></script>
+    <script>
+        var icon_counter = 1;
+        var slide_counter = 1;
+        var advantage_counter = 1;
+
+        {% if num == '0' %}
+            CKEDITOR.replace('header_text_ru');
+            CKEDITOR.replace('header_text_en');
+            CKEDITOR.replace('icon_text_1_ru');
+            CKEDITOR.replace('icon_text_1_en');
+            CKEDITOR.replace('slide_text_1_ru');
+            CKEDITOR.replace('slide_text_1_en');
+            buttonInit('icon');
+            buttonInit('slide');
+            slide_counter = 1;
+            icon_counter = 1;
+
+            function createHtml(html_type){
+                var html = '';
+                var counter = 0;
+                var element_text = '';
+                var element_type = '';
+                var element_image_text = '';
+                var textarea_label = '';
+                if(html_type == 'icon'){
+                    counter = icon_counter;
+                    element_type = 'icon';
+                    element_text = "{% trans '-ая иконка' %}";
+                    element_image_text = "{% trans 'Картинка иконки' %}";
+                    textarea_label = "{% trans 'Текст иконки' %}";
+                }
+                else if(html_type == 'slide'){
+                    counter = slide_counter;
+                    element_type = 'slide';
+                    element_text = "{% trans '-й слайд' %}";
+                    element_image_text = "{% trans 'Картинка слайда' %}";
+                    textarea_label = "{% trans 'Текст слайда' %}";
+                }
+                else{
+                    return 'Error';
+                }
+                html = `<div class="portlet light bordered" id="`+element_type+`_`+counter+`">
+                <div class="portlet-title" style="text-align: center;">
+                <div class="caption" style="width:90%; font-weight: bold;">
+                <span class="caption-subject font-black-sharp bold uppercase" id="`+element_type+`_span_`+counter+`">`+counter+element_text+`</span>
+                </div>
+                <a class="btn btn-sm red" id="delete_`+element_type+`_`+counter+`" href="#"> {% trans 'Удалить' %}</a>
+                </div>
+                <div class="form-group">
+                <label for="`+element_type+`_text_`+counter+`_ru">`+textarea_label+` RU</label>
+                <div class="input-group" style="display:block;">
+                <textarea class="form-control" name="`+element_type+`_text_`+counter+`_ru" id="`+element_type+`_text_`+counter+`_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="`+element_type+`_text_`+counter+`_en">`+textarea_label+` EN</label>
+                <div class="input-group" style="display:block;">
+                <textarea class="form-control" name="`+element_type+`_text_`+counter+`_en" id="`+element_type+`_text_`+counter+`_en">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="`+element_type+`_image_`+counter+`">`+element_image_text+`</label>
+                <div class="form-group">
+                <input id="`+element_type+`_image_`+counter+`" name="`+element_type+`_image_`+counter+`" type="file">
+                </div>
+                <div class="form-group" style="padding-bottom: 30px;">
+                <label for="`+element_type+`_image_`+counter+`_alt">{% trans 'Описание картинки (alt)' %}</label>
+                <div class="input-group" style="display: block;">
+                <input class="form-control" name="`+element_type+`_image_`+counter+`_alt" placeholder="{% trans 'Альт картинки для СЕО' %}" type="text">
+                </div>
+                </div>
+                </div>
+                </div>`;
+                return html;
+            }
+
+            $('#add_icon').on('click', function(e){
+                e.preventDefault();
+                var html = '';
+                icon_counter += 1;
+                html = createHtml('icon');
+                $('.admin-icons').append(html);
+                CKEDITOR.replace('icon_text_'+icon_counter+'_ru');
+                CKEDITOR.replace('icon_text_'+icon_counter+'_en');
+                buttonInit('icon');
+            });
+
+            $('#add_slide').on('click', function(e){
+                e.preventDefault();
+                var html = '';
+                slide_counter += 1;
+                html = createHtml('slide');
+                $('.admin-slides').append(html);
+                CKEDITOR.replace('slide_text_'+slide_counter+'_ru');
+                CKEDITOR.replace('slide_text_'+slide_counter+'_en');
+                buttonInit('slide');
+            });
+
+        {% elif num == '1' %}
+            CKEDITOR.replace('header_text_ru');
+            CKEDITOR.replace('header_text_en');
+            CKEDITOR.replace('main_content_title_ru');
+            CKEDITOR.replace('main_content_title_en');
+            CKEDITOR.replace('main_content_text_ru');
+            CKEDITOR.replace('main_content_text_en');
+            CKEDITOR.replace('main_advantages_title_ru');
+            CKEDITOR.replace('main_advantages_title_en');
+            CKEDITOR.replace('advantages_title_1_ru');
+            CKEDITOR.replace('advantages_title_1_en');
+            CKEDITOR.replace('advantages_text_1_ru');
+            CKEDITOR.replace('advantages_text_1_en');
+
+            buttonInit('advantage');
+            advantage_counter = 1;
+
+            function createHtml(html_type){
+                var html = '';
+                var counter = 0;
+                var element_text = '';
+                var element_type = '';
+                counter = advantage_counter;
+                element_type = 'advantage';
+                element_text = "{% trans '-ое преимущество' %}";
+
+                html = `<div class="portlet light bordered" id="`+element_type+`_`+counter+`">
+                <div class="portlet-title" style="text-align: center;">
+                <div class="caption" style="width:90%; font-weight: bold;">
+                <span class="caption-subject font-black-sharp bold uppercase" id="`+element_type+`_span_`
+                    +counter`">`+counter+element_text+`</span>
+                </div>
+                <a class="btn btn-sm red" id="delete_`+element_type+`_`+counter+`" href="#"> {% trans 'Удалить' %}
+                </a>
+                </div>
+                <div class="form-group">
+                <label for="`+advantage+`_title_`+counter+`_ru">{% trans 'Заголовок преимущества' %} RU</label>
+                <div class="input-group" style="display:block;">
+                <textarea class="form-control" name="`+element_type+`_title_`+counter+`_ru" id="`+element_type+
+                    `_title_`+counter+`_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="`+advantage+`_title_`+counter+`_en">{% trans 'Заголовок преимущества' %} EN</label>
+                <div class="input-group" style="display:block;">
+                <textarea class="form-control" name="`+element_type+`_title_`+counter+`_en" id="`+element_type+
+                    `_title_`+counter+`_en">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="`+element_type+`_text_`+counter+`_ru">{% trans 'Текст преимущества' %} RU</label>
+                <div class="input-group" style="display:block;">
+                <textarea class="form-control" name="`+element_type+`_text_`+counter+`_ru" id="`+element_type+
+                    `_text_`+counter+`_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="`+element_type+`_text_`+counter+`_en">{% trans 'Текст преимущества' %} EN</label>
+                <div class="input-group" style="display:block;">
+                <textarea class="form-control" name="`+element_type+`_text_`+counter+`_en" id="`+element_type+
+                    `_text_`+counter+`_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                <label for="`+element_type+`_image_`+counter+`">{% trans 'Картинка' %}</label>
+                <div class="form-group">
+                <input id="`+element_type+`_image_`+counter+`" name="`+element_type+`_image_`+counter+`" type="file">
+                </div>
+                </div>
+                <div class="form-group" style="padding-bottom: 30px;">
+                <label for="`+element_type+`_image_`+counter+`_alt">{% trans 'Описание картинки (alt)' %}</label>
+                <div class="input-group" style="display: block;">
+                <input class="form-control" name="`+element_type+`_image_`+counter+`_alt"
+                placeholder="{% trans 'Альт картинки для СЕО' %}" type="text">
+                </div>
+                </div>
+                </div>`;
+                return html;
+            }
+
+
+            $('#add_advantage').on('click', function(e){
+                e.preventDefault();
+                var html = '';
+                advantage_counter += 1;
+                html = createHtml();
+                $('.admin_advantages').append(html);
+                CKEDITOR.replace('advantage_text_'+icon_counter+'_ru');
+                CKEDITOR.replace('advantage_text_'+icon_counter+'_en');
+                CKEDITOR.replace('advantage_title_'+icon_counter+'_ru');
+                CKEDITOR.replace('advantage_title_'+icon_counter+'_en');
+                buttonInit('advantage');
+            });
+
+        {% endif %}
+
+        function buttonInit(element_type){
+            var counter = 0;
+            if(element_type == 'icon'){
+                counter = icon_counter;
+            }
+            else if(element_type == 'slide'){
+                counter = slide_counter;
+            }
+            else if(element_type == 'advantage'){
+                counter = advantage_counter;
+            }
+            else{
+                console.log('ERROR');
+                return 'Error'
+            }
+            console.log('#delete_'+element_type+'_'+counter);
+            $('#delete_'+element_type+'_'+counter).on('click', function(e){
+                if(element_type == 'icon'){
+                    icon_counter -=1;
+                }
+                else if(element_type == 'slide'){
+                    slide_counter -=1;
+                }
+                else if(element_type == 'advantage'){
+                    advantage_counter -= 1;
+                }
+                e.preventDefault();
+                if(element_type == 'advantage'){
+                    var editor_ru = CKEDITOR.instances[element_type+'_text_'+counter+'_ru'];
+                    var editor_en = CKEDITOR.instances[element_type+'_text_'+counter+'_en'];
+                    var title_ru = CKEDITOR.instances[element_type+'_title_'+counter+'_ru'];
+                    var title_en = CKEDITOR.instances[element_type+'_title_'+counter+'_en'];
+                    if(editor_ru){
+                        editor_ru.destroy(true);
+                        editor_en.destroy(true);
+                        title_ru.destroy(true);
+                        title_en.destroy(true);
+                    }
+                }
+                else {
+                    var editor_ru = CKEDITOR.instances[element_type + '_text_' + counter + '_ru'];
+                    var editor_en = CKEDITOR.instances[element_type + '_text_' + counter + '_en'];
+                    if (editor_ru) {
+                        editor_ru.destroy(true);
+                        editor_en.destroy(true);
+                    }
+                }
+                $('#'+element_type+'_'+counter).remove();
+                console.log('#'+element_type+counter);
+            });
+        }
+
+        $('#creation_form').on('submit', function(e){
+            e.preventDefault();
+            var i = 0;
+            for (instance in CKEDITOR.instances) {
+                CKEDITOR.instances[instance].updateElement();
+            }
+            var form_data = new FormData($('#creation_form').get(0));
+            console.log(form_data);
+            $.ajaxSetup({
+                headers: {"X-CSRFToken": "{{ csrf_token }}"}
+            });
+            $.ajax({
+                url: $(this).attr('action'),
+                type: $(this).attr('method'),
+// {#               data: $(this).serialize(),#}
+                data: form_data,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    console.log(JSON.stringify(response));
+                    if(response.error){
+                        console.log(response['status'])
+                        switch (response['status']){
+                            case 2:
+                                notification('error', response['subject'], response['message']);
+                                break;
+                            default:
+                                console.log(response['invalid_key']);
+                                var text = $('label[for=' + response["invalid_key"] + ']').text();
+                                var number = response['invalid_key'].replace(/[^\d.]/g, '');
+                                if (number) {
+                                    var id = response["invalid_key"].split("_")[0]
+                                    id = id + '_span_' + number;
+                                    console.log(id, '<<<<<<');
+                                    var subject = $('span[id=' + id + ']').text();
+                                    notification('error', subject + '!', text + ' не может быть пустым.');
+                                }
+                                else {
+                                    notification('error', text + '!', text + ' не может быть пустым.')
+                                }
+                        }
+                    }
+                    else{
+                        notification('success', response['subject'], response['message']);
+                        setTimeout(function(){
+                            window.location.href = "{% url 'get_page' num %}";
+                        }, 3000);
+                    }
+                },
+                error: function (response) {
+                }
+            });
+        });
+    </script>
 {% endblock scripts %}

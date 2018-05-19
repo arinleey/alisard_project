@@ -1,10 +1,12 @@
 from django.shortcuts import render
+from core.models import MainPage
 
 # Create your views here.
 
 
 def main_page(request):
-    return render(request, 'main_page.html')
+    page = MainPage.objects.first()
+    return render(request, 'main_page.html', {'page': page})
 
 
 def test_index(request):
