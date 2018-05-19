@@ -1,0 +1,158 @@
+{% load i18n %}
+<form action="{% url 'create_page' num %}" method="POST" role="form" id="creation_form">
+    {% csrf_token %}
+    <div class="form-body">
+        <div class="form-group" style="padding-bottom: 30px;">
+            <label for="template_name">{% trans 'Название шаблона' %}</label>
+            <div class="input-group" style="display: block;">
+                <input class="form-control" name="template_name" placeholder="{% trans 'Название шаблона' %}" type="text">
+            </div>
+        </div>
+        <br/>
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-blue-sharp"></i>
+                    <span class="caption-subject font-blue-sharp bold uppercase" style="width:80%">{% trans 'Заголовок' %}</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="header_text">{% trans 'Заголовок шапки' %} RU</label>
+                <div class="input-group" style="display:block;">
+                    <textarea id="header_text_ru" class="form-control" name="header_text_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="header_text">{% trans 'Заголовок шапки' %} EN</label>
+                <div class="input-group" style="display:block;">
+                    <textarea id="header_text_en" class="form-control" name="header_text_en">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="header_image">{% trans 'Картинка шапки' %}</label>
+                <div class="form-group">
+                    <input id="header_image" name="header_image" type="file">
+                </div>
+            </div>
+            <div class="form-group" style="padding-bottom: 30px;">
+                <label for="image_alt">{% trans 'Описание картинки (alt)' %}</label>
+                <div class="input-group" style="display: block;">
+                    <input class="form-control" name="image_alt" placeholder="{% trans 'Альт картинки для СЕО' %}" type="text">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-blue-sharp"></i>
+                    <span class="caption-subject font-blue-sharp bold uppercase" style="width:80%">{% trans 'Блок о компании' %}</span>
+                </div>
+            </div>
+            <br/>
+            <div class="portlet light bordered">
+                <div class="form-group">
+                    <label for="main_content_title_ru">{% trans 'Заголовок блока' %} RU</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="main_content_title_ru" id="main_content_title_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="main_content_title_en">{% trans 'Заголовок блока' %} EN</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="main_content_title_en" id="main_content_title_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="main_content_text_ru">{% trans 'Описание блока' %} RU</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="main_content_text_ru" id="main_content_text_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="main_content_text_en">{% trans 'Описание блока' %} EN</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="main_content_text_en" id="main_content_text_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="main_advantages_title_ru">{% trans 'Заголовок блока преимущества' %} RU</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="main_advantages_title_ru" id="main_advantages_title_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="main_advantages_title_en">{% trans 'Заголовок блока преимущества' %} EN</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="main_advantages_title_en" id="main_advantages_title_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="portlet light bordered admin_advantages">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-blue-sharp"></i>
+                    <span class="caption-subject font-blue-sharp bold uppercase">{% trans 'Блок преимущества' %}</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group">
+                        <a class="btn btn-sm green" id="add_advantage" href="#"> {% trans 'Добавить преимущество' %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="portlet light bordered" id="advantage_1">
+                <div class="portlet-title" style="text-align: center;">
+                    <div class="caption" style="width:90%; font-weight: bold;">
+                        <span class="caption-subject font-black-sharp bold uppercase" id="advantage_span_1">1{% trans '-ое преимущество' %}</span>
+                    </div>
+                    <a class="btn btn-sm red" id="delete_advantage_1" href="#"> {% trans 'Удалить' %}
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label for="advantages_title_1_ru">{% trans 'Заголовок преимущества' %} RU</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="advantages_title_1_ru" id="advantages_title_1_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="advantages_title_1_en">{% trans 'Заголовок преимущества' %} EN</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="advantages_title_1_en" id="advantages_title_1_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="advantages_text_1_ru">{% trans 'Текст преимущества' %} RU</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="advantages_text_1_ru" id="advantages_text_1_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="advantages_text_1_en">{% trans 'Текст преимущества' %} EN</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="advantages_text_1_en" id="advantages_text_1_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="advantage_image_1">{% trans 'Картинка' %}</label>
+                    <div class="form-group">
+                        <input id="advantage_image_1" name="advantage_image_1" type="file">
+                    </div>
+                </div>
+                <div class="form-group" style="padding-bottom: 30px;">
+                    <label for="advantage_image_1_alt">{% trans 'Описание картинки (alt)' %}</label>
+                    <div class="input-group" style="display: block;">
+                        <input class="form-control" name="advantage_image_1_alt" placeholder="{% trans 'Альт картинки для СЕО' %}" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn blue">Submit</button>
+            <a href="{% url 'get_page' num %}" type="button" class="btn default">Cancel</a>
+        </div>
+    </div>
+</form>

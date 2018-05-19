@@ -28,7 +28,7 @@ LANGUAGE_CODE = 'en-us'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+# TEMPLATE_DEBUG = DEBUG
 THUMBNAIL_DEBUG = DEBUG
 USE_L10N = True
 USE_I18N = True
@@ -101,6 +101,7 @@ TEMPLATES = [
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
+            'debug': DEBUG,
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',

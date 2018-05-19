@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load i18n %}
 <html lang="en" style="height:100%;">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +33,6 @@
 
     {% block css %}
         <link href="{% static 'css/index.css' %}" rel="stylesheet">
-        <link href="{% static 'css/menu.css' %}" rel="stylesheet">
         <link href="{% static 'css/media.css' %}" rel="stylesheet">
     {% endblock css %}
 </head>
@@ -107,8 +107,6 @@
                 </div>
             </div>
         </div>
-
-
 
 
 

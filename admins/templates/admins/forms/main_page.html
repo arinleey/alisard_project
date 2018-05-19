@@ -1,0 +1,147 @@
+{% load i18n %}
+<form action="{% url 'create_page' num %}" method="POST" role="form" id="creation_form">
+    {% csrf_token %}
+    <div class="form-body">
+        <div class="form-group" style="padding-bottom: 30px;">
+            <label for="template_name">{% trans 'Название шаблона' %}</label>
+            <div class="input-group" style="display: block;">
+                <input class="form-control" name="template_name" placeholder="{% trans 'Название шаблона' %}" type="text">
+            </div>
+        </div>
+        <br/>
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-blue-sharp"></i>
+                    <span class="caption-subject font-blue-sharp bold uppercase" style="width:80%">{% trans 'Заголовок' %}</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="header_text">{% trans 'Заголовок шапки' %} RU</label>
+                <div class="input-group" style="display:block;">
+                    <textarea id="header_text_ru" class="form-control" name="header_text_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="header_text">{% trans 'Заголовок шапки' %} EN</label>
+                <div class="input-group" style="display:block;">
+                    <textarea id="header_text_en" class="form-control" name="header_text_en">{% autoescape off %}{% endautoescape %}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="header_image">{% trans 'Картинка шапки' %}</label>
+                <div class="form-group">
+                    <input id="header_image" name="header_image" type="file">
+                </div>
+            </div>
+            <div class="form-group" style="padding-bottom: 30px;">
+                <label for="image_alt">{% trans 'Описание картинки (alt)' %}</label>
+                <div class="input-group" style="display: block;">
+                    <input class="form-control" name="image_alt" placeholder="{% trans 'Альт картинки для СЕО' %}" type="text">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="portlet light bordered admin-icons">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-blue-sharp"></i>
+                    <span class="caption-subject font-blue-sharp bold uppercase" style="width:80%">{% trans 'Иконки' %}</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group">
+                        <a class="btn btn-sm green" id="add_icon" href="#"> {% trans 'Добавить иконку' %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="portlet light bordered" id="icon_1">
+                <div class="portlet-title" style="text-align: center;">
+                    <div class="caption" style="width:90%; font-weight: bold;">
+                        <span class="caption-subject font-black-sharp bold uppercase" id="icon_span_1">1{% trans '-ая иконка' %}</span>
+                    </div>
+                    <a class="btn btn-sm red" id="delete_icon_1" href="#"> {% trans 'Удалить' %}
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label for="icon_text_1_ru">{% trans 'Текст иконки' %} RU</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="icon_text_1_ru" id="icon_text_1_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="icon_text_1_en">{% trans 'Текст иконки' %} EN</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="icon_text_1_en" id="icon_text_1_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="icon_image_1">{% trans 'Картинка иконки' %}</label>
+                    <div class="form-group">
+                        <input id="icon_image_1" name="icon_image_1" type="file">
+                    </div>
+                </div>
+                <div class="form-group" style="padding-bottom: 30px;">
+                    <label for="icon_image_1_alt">{% trans 'Описание картинки (alt)' %}</label>
+                    <div class="input-group" style="display: block;">
+                        <input class="form-control" name="icon_image_1_alt" placeholder="{% trans 'Альт картинки для СЕО' %}" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="portlet light bordered admin-slides">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-blue-sharp"></i>
+                    <span class="caption-subject font-blue-sharp bold uppercase">{% trans 'Карусель' %}</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group">
+                        <a class="btn btn-sm green" id="add_slide" href="#"> {% trans 'Добавить слайд' %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="portlet light bordered" id="slide_1">
+                <div class="portlet-title" style="text-align: center;">
+                    <div class="caption" style="width:90%; font-weight: bold;">
+                        <span class="caption-subject font-black-sharp bold uppercase" id="slide_span_1">1{% trans '-й слайд' %}</span>
+                    </div>
+                    <a class="btn btn-sm red" id="delete_slide_1" href="#"> {% trans 'Удалить' %}
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label for="slide_text_1_ru">{% trans 'Текст слайда' %} RU</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="slide_text_1_ru" id="slide_text_1_ru">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="slide_text_1_en">{% trans 'Текст слайда' %} EN</label>
+                    <div class="input-group" style="display:block;">
+                        <textarea class="form-control" name="slide_text_1_en" id="slide_text_1_en">{% autoescape off %}{% endautoescape %}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="slide_image_1">{% trans 'Картинка слайда' %}</label>
+                    <div class="form-group">
+                        <input id="slide_image_1" name="slide_image_1" type="file">
+                    </div>
+                </div>
+                <div class="form-group" style="padding-bottom: 30px;">
+                    <label for="slide_image_1_alt">{% trans 'Описание картинки (alt)' %}</label>
+                    <div class="input-group" style="display: block;">
+                        <input class="form-control" name="slide_image_1_alt" placeholder="{% trans 'Альт картинки для СЕО' %}" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn blue">Submit</button>
+            <a href="{% url 'get_page' num %}" type="button" class="btn default">Cancel</a>
+        </div>
+    </div>
+</form>
