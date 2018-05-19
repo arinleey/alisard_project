@@ -31,39 +31,40 @@
 
 
     {% block css %}
-        <link href="{% static 'css/media.css' %}" rel="stylesheet">
         <link href="{% static 'css/index.css' %}" rel="stylesheet">
         <link href="{% static 'css/menu.css' %}" rel="stylesheet">
+        <link href="{% static 'css/media.css' %}" rel="stylesheet">
     {% endblock css %}
 </head>
 
 <body style="position:relative; min-height:100%;">
     <div class="row" style="top:0px;"> <!--head-main -->
-        <nav class="header-top ">
-            <div class="top-info col-md-12">
-                <div class="language col-md-1">
-                    <a class="active" href="#">ru</a> / <a href="#">eng</a>
+        <nav class="header-top">
+            <div class="top-info col-md-12 col-xs-12">
+                <div class="language col-md-1 col-xs-1">
+                    <a class="active" href="#"><img src="{% static 'images/united-kingdom.png' %}"></a> <a href="#"><img src="{% static 'images/russian.png' %}"></a>
                 </div>
                 <div class="info-company-top">
-                    <div class=" col-md-3">
-                        <p><img src="{% static 'images/ico/clock_time.ico' %}">  ежедневно 09:00 - 21:00</p>
+                    <div class=" col-md-3 col-xs-3 time-work">
+                        <p><img src="{% static 'images/clock.png' %}">  Ежедневно 09:00 - 21:00</p>
                     </div>
-                    <div class=" col-md-2">
-                        <p><img src="{% static 'images/ico/skype_icon.ico' %}">  alisard_kdk</p>
+                    <div class=" col-md-2 col-xs-2 skype-info">
+                        <p><img src="{% static 'images/skype.png' %}">  puzach</p>
                     </div>
-                     <div class=" col-md-3">
-                        <p><img src="{% static 'images/ico/telegram_icon.ico' %}"> <img src="{% static 'images/ico/viber_14147.ico' %}">  <img src="{% static 'images/ico/whatsapp_icon.ico' %}"> +7 (981) 155 66 55</p>
+                     <div class=" col-md-3 col-xs-1 contactu-info">
+                        <p><img src="{% static 'images/telegram.png' %}"> <img src="{% static 'images/viber.png' %}">  <img src="{% static 'images/whatsapp.png' %}"> +1 (375) 44511175865</p>
                     </div>
-                    <div class=" col-md-3">
-                        <p><img src="{% static 'images/ico/email-outlined.ico' %}">  alisard@gmail.com</p>
+                    <div class=" col-md-3 col-xs-3 email-info">
+                        <p><img src="{% static 'images/email.png' %}">  puzach@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <div class="logo-block col-md-2">
-                <a href="{% url 'main_page' %}"><img src="{% static 'images/logo.png' %}" ></a>
+               </nav>
+                      <div class="logo-block col-md-2">
+                <a href="{% url 'main_page' %}"><img src="{% static 'images/favicon.ico' %}"></a>
             </div>
 
-            <div class="menu-top-mobil col-md-6">
+            <div class="menu-top-mobil col-md-7">
                 <nav class="main-nav header_menu">
                 <div id="cssmenu">
                      <ul>
@@ -80,7 +81,6 @@
                                  <li><a href="#">Деревянные дома </a></li>
                         	     <li><a href="#">Ремонт и реконструкции </a></li>
                         	     <li><a href="#">Металлоконструкции </a></li>
-                        	     <li><a href="#">Ландшафтный дизайн </a></li>
                              </ul>
                          </li>
                          <li class='active has-sub'><a href="{% url 'project' %}">Проекты</a>
@@ -92,22 +92,23 @@
                                     <li><a href="{% url 'industrial_facilities' %}">Купольные конструкции</a></li>
                              </ul>
                          </li>
+                         <li><a href="{% url 'news' %}">Прайс-лист</a></li>
                          <li><a href="{% url 'news' %}">Новости</a></li>
                          <li><a href="{% url 'contacts' %}">Контакты</a></li>
                      </ul>
                     </div>
                 </nav>
             </div>
-        </nav>
-        <div class="col-xs-4 col-md-4 phone">
-{#            <p class="texts"><i class="fa fa-phone" aria-hidden="true"></i> +7 (981) 155 66 55</p>#}
+{#        </nav>#}
+        <div class="col-xs-3 col-md-3 phone">
             <div class="info">
                 <div class="buttons">
                     <p><a href="" data-modal="#modal" class="modal__trigger">Заказать обратный звонок</a></p>
                 </div>
             </div>
         </div>
-        </div>
+
+
 
 
 
@@ -125,6 +126,9 @@
                     </div>
                 </div>
             </div>
+
+             </div>
+
         </div>
     </div>
 
@@ -137,7 +141,7 @@
         <div class="container top-footer">
             <div class="col-md-3">
                 <div class="logo-foter">
-                     <a href="{% url 'main_page' %}"><img src="{% static 'images/logo.png' %}"style="width:100px;"></a>
+                     <a href="{% url 'main_page' %}"><img src="{% static 'images/favicon.ico' %}"style="width:200px;"></a>
                 </div>
                 <div class="footer-text">
                     <p>Строительство и монтаж большепролетных деревянных конструкций</p>
@@ -151,7 +155,7 @@
             </div>
             <div class="info-footer col-md-4">
                 <div class="phone-footer">
-                    <p>+7 (981) 155 66 55</p>
+                    <p>+7 (375) 095 88 54</p>
                 </div>
                 <div class="adress-footer">
                     <p class="office">Наш офис</p>

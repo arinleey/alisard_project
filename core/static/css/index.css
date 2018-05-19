@@ -1,97 +1,3 @@
-/*.menu {*/
-    /*margin:0px;*/
-    /*margin-top: 35px;*/
-    /*padding: 2px;*/
-    /*float: left;*/
-    /*width: 49%;*/
-/*}*/
-/*.menu li {*/
-    /*margin:0px;*/
-    /*font-family: 'Lato', sans-serif;*/
-/*}*/
-
-/*.menu a {*/
-    /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
-    /*transition:all linear 0.15s;*/
-    /*color: #fff;*/
-    /*font-size: 16px;*/
-
-/*}*/
-/*.menu li:hover > a, .menu .current-item > a {*/
-    /*text-decoration:none;*/
-    /*color:#fff;*/
-    /*background-color: #448e3b;*/
-/*}*/
-
-/*.menu .arrow {*/
-    /*font-size:11px;*/
-    /*line-height:0%;*/
-/*}*/
-
-/*.menu > ul > li {*/
-    /*!*float:left;*!*/
-    /*display:inline-block;*/
-    /*position:relative;*/
-    /*font-size:15px;*/
-/*}*/
-/*.menu > ul > li > a {*/
-    /*padding:4px 15px;*/
-    /*display:inline-block;*/
-    /*!*text-shadow:0px 1px 0px rgba(0,0,0,0.4);*!*/
-/*}*/
-/*!*----- выпадающее меню -----*!*/
-/*.menu li:hover .sub-menu {*/
-    /*z-index:1;*/
-    /*opacity:3;*/
-/*}*/
-
-/*.sub-menu {*/
-    /*width:310px;*/
-    /*padding:5px 0px;*/
-    /*position:absolute;*/
-    /*top:100%;*/
-    /*left:0px;*/
-    /*z-index:-1;*/
-    /*opacity:0;*/
-    /*transition:opacity linear 0.15s;*/
-    /*box-shadow:0px 2px 3px rgba(0,0,0,0.2);*/
-    /*background:#333;*/
-/*}*/
-/*.sub-menu li {*/
-    /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
-    /*display:block;*/
-    /*font-size:16px;*/
-/*}*/
-/*.sub-menu li a {*/
-    /*padding: 2px 30px;*/
-    /*display:block;*/
-/*}*/
-/*.clearfix{*/
-   /*width: 150%;*/
-   /*left:10%;*/
-/*}*/
-
-.phone{
-    margin-top: 23px;
-    text-align: right;
-}
-.texts{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-right: 4%;
-}
-.texts:hover {
-    color: #ececec;
-}
-.times{
-    text-decoration:none;
-}
-
-.times{
-    color: #fff;
-    margin-top: -0.8em;
-}
 .mayfooter{
     border-top: 1px solid #2978ad;
     background-color: #f7f7f7;
@@ -99,8 +5,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    /*padding: 0 15px;*/
-    /*position: absolute;*/
     margin-top: 50px;
     display: block;
 }
@@ -113,7 +17,6 @@
     margin-left: 0;
     margin-right: 0;
 }
-/*футер*/
 .top-footer{
     margin-top: 25px;
 }
@@ -123,7 +26,6 @@
     left:0px;
     text-align: left;
     font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
-    /*font-family: Lato, sans-serif;*/
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
@@ -132,7 +34,6 @@
 	text-decoration:none;
 	padding: 10px 15px;
 	display:block;
-
 }
 .footer-menu a{
     color: #414042;
@@ -155,55 +56,10 @@
     color: #4448;
     font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
     margin-bottom: -20px;
-
-}
-.optionfoot{
-    color: #fff;
-    font-size: 15px;
-}
-.textoption{
-    color:#8c8c8c;
-    font-size: 14px;
-}
-.txtoption2{
-    padding-top: 30px;
-    color:#8c8c8c;
-    font-size: 14px;
-}
-.footer-social p {
-     color:#8c8c8c;
-    font-size: 14px;
 }
 .info-footer{
     margin-top: 31px;
 }
-.iconfootsocial{
-  /*width: 1310px;!*фиксируем ширину обертки*!*/
-  margin: 0 auto;/*центрируем ее*/
-  /*height: 120px;!*Задаем высоту обертки*!*/
-}
-.socialiconvk{
-  float: left; /*Задаем обтекание*/
-  margin-left: 2px;
-  line-height: 70px;/*Высота строки +  верт. центрирования текста*/
-  color: white;
-  /*width: 70px; !*Фиксируем ширину блока*!*/
-  margin-right: 4px;
-  text-align: center; /*Центрируем текст по горизонтали*/
-}
-.iconfootsocial :last-child{
-        margin-right: 0px;/*Убираем поле последнего div-а*/
-}
-.phon{
-    /*position: absolute;*/
-    /*left: 75%;*/
-    color:#fff;
-    /*margin-top: 25px;*/
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
-}
-
 .aboutcompany{
     margin-top: 70px;
     margin-bottom: 30px;
@@ -218,184 +74,7 @@
     color: #4448;
     text-align: right;
 }
-.contfoot{
-    color: #C0C0C0;
-    /*font-weight: 700;*/
-}
-
-/*menu*/
-
-p,div, span{
-	line-height:1.5em;
-}
-
-.column-clear{
-	clear:both;
-}
-.clear{
-	overflow: hidden;
-}
-
-.mainWrap{
-    margin:0px;
-    margin-top: 35px;
-    padding: 2px;
-    float: left;
-    width: 49%;
-}
-
-nav {
-	display:block;
-	/*background:#3E4156;*/
-}
-.menu{
-	display:block;
-}
-.menu li{
-	display: inline-block;
-	position: relative;
-	z-index:100;
-}
-.menu li:first-child{
-	margin-left:0;
-}
-
-.menu li a {
-	/*font-weight:700;*/
-	text-decoration:none;
-	padding: 10px 15px;
-	display:block;
-	color:#ffffff;
-
-	-webkit-transition: all 0.2s ease-in-out 0s;
-	-moz-transition: all 0.2s ease-in-out 0s;
-	-o-transition: all 0.2s ease-in-out 0s;
-	-ms-transition: all 0.2s ease-in-out 0s;
-	transition: all 0.2s ease-in-out 0s;
-}
-
-.menu li a:hover,
-.menu li:hover > a{
-	color:#ffffff;
-	background:#9CA3DA;
-}
-
-.menu ul {
-	display: none;
-	margin: 0;
-	padding: 0;
-	width: 150px;
-	position: absolute;
-	top: 43px;
-	left: 0px;
-	background: #ffffff;
-}
-
-.menu ul li {
-	display:block;
-	float: none;
-	background:none;
-	margin:0;
-	padding:0;
-}
-.menu ul li a {
-	font-size:12px;
-	font-weight:normal;
-	display:block;
-	color:#797979;
-	border-left:3px solid #ffffff;
-	background:#ffffff;
-}
-.menu ul li a:hover, .menu ul li:hover > a{
-	background:#f0f0f0;
-	border-left:3px solid #9CA3DA;
-	color:#797979;
-}
-.menu li:hover > ul{
-	display: block;
-}
-.menu ul ul {
-	left: 149px;
-	top: 0px;
-}
-.mobile-menu{
-	display:none;
-	width:100%;
-	padding:11px;
-	background:#3E4156;
-	color:#ffffff;
-	text-transform:uppercase;
-	font-weight:600;
-}
-.mobile-menu:hover{
-	background:#3E4156;
-	color:#ffffff;
-	text-decoration:none;
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-
-	.mainWrap{
-		width:768px;
-	}
-	.menu ul {
-		top:37px;
-	}
-	.menu li a{
-		font-size:12px;
-		padding:8px;
-	}
-}
-
-@media (max-width: 760px) {
-
-	.mainWrap{
-		width:auto;
-		padding:50px 20px;
-	}
-	.menu{
-		display:none;
-	}
-	.mobile-menu{
-		display:block;
-		margin-top:100px;
-	}
-	nav{
-		margin:0;
-		background:none;
-	}
-	.menu li{
-		display:block;
-		margin:0;
-	}
-	.menu li a {
-		background:#ffffff;
-		color:#797979;
-		border-top:1px solid #e0e0e0;
-		border-left:3px solid #ffffff;
-	}
-	.menu li a:hover, .menu li:hover > a{
-		background:#f0f0f0;
-		color:#797979;
-		border-left:3px solid #9CA3DA;
-	}
-	.menu ul {
-		display:block;
-		position:relative;
-		top:0;
-		left:0;
-		width:100%;
-	}
-	.menu ul ul {
-		left:0;
-	}
-
-}
-
-@media (max-width: 480px) {}
-@media (max-width: 320px) {}
-
-/*телефон обратный звонок*/
+/*телефон обратный звонок (модальное окно)*/
 .modal {
   will-change: visibility, opacity;
   display: flex;
@@ -461,6 +140,7 @@ nav {
     -ms-user-select: none;
     user-select: none;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 16px;
 }
 .modal__trigger--active {
   z-index: 10;
@@ -533,10 +213,9 @@ nav {
 }
 .footer-text p{
     color:#666666;
-    /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
 }
 
- @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*меню*/
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -604,22 +283,23 @@ nav {
   text-align: right;
 }
 #cssmenu > ul > li > a {
+  font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     padding: 20px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000000;
+    color: #182737;
     -webkit-transition: color .2s ease;
     -moz-transition: color .2s ease;
     -ms-transition: color .2s ease;
     -o-transition: color .2s ease;
     transition: color .2s ease;
 }
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li.active > a {
-  color: #333;
-}
+/*#cssmenu > ul > li:hover > a,*/
+/*#cssmenu > ul > li.active > a {*/
+  /*color: #333;*/
+/*}*/
 #cssmenu > ul > li.has-sub > a {
   padding-right: 25px;
 }
@@ -677,8 +357,8 @@ nav {
 }
 #cssmenu ul ul li a {
   padding: 10px 20px;
-  width: 200px;
-  font-size: 12px;
+  width: 280px;
+  font-size: 14px;
   background: #2978ad;
   text-decoration: none;
   color: #dddddd;
@@ -755,7 +435,7 @@ nav {
   #cssmenu ul ul li a {
     padding: 20px 20px 20px 30px;
     font-size: 12px;
-    color: #000000;
+    color: #182737;
     background: none;
   }
   #cssmenu ul ul li:hover > a,
@@ -847,12 +527,13 @@ nav {
   }
 }
 .menu-top-mobil{
-    margin-top: 31px;
+    margin-top: 41px;
 }
 .top-info{
-    border-top: 3px solid #2978ad;
-  box-sizing: border-box;
+    border-top: 1px solid #2978ad;
+    box-sizing: border-box;
     box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.4);
+    background-color: #f7f7f7;
 }
 .language{
     padding-top: 5px;
@@ -862,20 +543,19 @@ nav {
 }
 .info-company-top p{
     font-family: "roboto", sans-serif !important;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
     margin-right: 4%;
     margin-top: 6px;
     margin-bottom: 6px;
     color:#333;
 }
 .itempr p{
-  margin-top: 0px;
+  margin-top: 6px;
   font-family: "roboto", sans-serif !important;
+  font-size: 14px;
 }
 
 /*подписка на новости*/
-
 .box {
     box-shadow: 0px 0px 10px #afc0d9;
     /*background-color: #fff;*/
@@ -883,24 +563,6 @@ nav {
     border-radius: .25rem;
     text-align: center;
 }
-
-
-/*h1 {*/
-    /*color: rgb(53, 114, 210);*/
-    /*font-size: 17px;*/
-    /*font-weight: bold;*/
-    /*letter-spacing: 6px;*/
-    /*text-transform: uppercase;*/
-    /*text-align: center;*/
-    /*margin-bottom: 20px;*/
-/*}*/
-
-/*p {*/
-    /*margin-top: 10px;*/
-    /*margin-bottom: 25px;*/
-    /*font-size: 20px;*/
-    /*font-weight: 300;*/
-/*}*/
 
 input {
     border: 1px solid rgb(220, 219, 235);
@@ -947,5 +609,8 @@ input:focus {
 .news-text{
   font-size: 19px;
   color: #414042;
-  /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
 }
+.head-background{
+  background-color: #0c0c0c;
+}
+

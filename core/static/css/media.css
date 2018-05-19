@@ -1,40 +1,67 @@
-@media screen and (min-width : 1824px) {
-    .menu-wrap ul li a{
-	    font-size:23px;
-        text-align: center;
-        font-weight: normal;
-    }
 
-    .logo-block img {
-        width: 170%;
+/* @media querries */
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 33px;
     }
+    .language{
+        margin-left: 120px;
+    }
+	.language img{
+		width: 10px;
+	}
+	.language {
+		left: 0px;
+	}
+	.logo-block img{
+		width: 80px;
+	}
 
-    .texts{
-        font-size: 26px;
-    }
-    .times{
-        font-size: 23px;
-    }
-    .phon{
-      font-size: 23px;
-    }
-}
-@media screen and (max-width: 1203px) {
-    .menu {
-        width: 120%;
-    }
 }
 
-@media screen and (max-width: 1004px) {
-    .menu {
-        width: 121%;
-    }
+
+
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
 }
-
-@media screen and (max-width: 995px) {
-
-        .menu {
-        margin-top: 0;
-    }
-
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}
 }
