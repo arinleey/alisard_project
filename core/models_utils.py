@@ -5,7 +5,7 @@ import requests
 
 
 def pages_path(instance, filename):
-    return 'pages/%s/%s' % (instance.template_name, filename)
+    return 'pages/%s/%s' % (instance, filename)
 
 
 def projects_path(instance, filename):

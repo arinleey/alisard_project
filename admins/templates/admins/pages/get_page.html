@@ -7,7 +7,7 @@
 {% endblock css %}
 
 {% block main_content %}
-    {% if data is None %}
+    {% if not data %}
         {% trans 'Увы, у вас нету шаблонов главной страницы, хотите создать?' %}
         <a href="{% url 'create_page' num %}">{% trans 'Создать шаблон' %}</a>
     {% else %}

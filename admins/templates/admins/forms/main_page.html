@@ -1,5 +1,5 @@
 {% load i18n %}
-<form action="{% url 'create_page' num %}" method="POST" role="form" id="creation_form">
+<form action="{% url 'create_page' num %}" method="POST" role="form" id="creation_form" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="form-body">
         <div class="form-group" style="padding-bottom: 30px;">
